@@ -1,0 +1,122 @@
+$mobile-small: 365px;
+$mobile: 550px;
+$mobile-large: 581px;
+$tablet: 768px;
+$tablet-medium: 906px;
+$tablet-large: 1214px;
+$desktop: 1380px;
+$desktop-large: 1840px;
+
+@mixin mobile-small {
+  @media only screen and (max-width: $mobile-small) {
+    @content;
+  }
+}
+
+@mixin over-mobile-small {
+  @media only screen and (min-width: $mobile-small) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media only screen and (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin over-mobile {
+  @media only screen and (min-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin mobile-large {
+  @media only screen and (max-width: $mobile-large) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin over-tablet {
+  @media only screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin tablet-medium {
+  @media only screen and (max-width: $tablet-medium) {
+    @content;
+  }
+}
+
+@mixin over-tablet-medium {
+  @media only screen and (min-width: $tablet-medium) {
+    @content;
+  }
+}
+
+@mixin tablet-large {
+  @media only screen and (max-width: $tablet-large) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (max-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin desktop-large {
+  @media only screen and (max-width: $desktop-large) {
+    @content;
+  }
+}
+
+@mixin touch {
+  @media (hover: none) and (pointer: coarse) {
+    @content;
+  }
+}
+
+@mixin mouse {
+  @media (hover: hover) and (pointer: fine) {
+    @content;
+  }
+}
+
+@mixin moz {
+  @-moz-document url-prefix() {
+    @content;
+  }
+}
+
+@mixin landscape-mobile {
+  @media screen and (orientation:landscape) and (max-width: $tablet-medium) {
+    @content;
+  }
+}
+
+@mixin ios {
+  @supports (-webkit-touch-callout: none) {
+    @content;
+  }
+}
+
+@mixin safari {
+  @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
+    @content;
+  }
+}
+
+@mixin only-webkit {
+  @supports (-webkit-transform: translate(100px, 100px)) {
+    @content;
+  }
+}
