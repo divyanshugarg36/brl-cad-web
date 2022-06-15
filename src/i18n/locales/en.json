@@ -1,3 +1,11 @@
 {
-  "TITLE": "BRL-CAD Project Site"
+  "TITLE": "BRL-CAD Project Site",
+  "NAVIGATION": {
+    "DOWNLOAD": "Download",
+    "NEWS": "News",
+    "ABOUT": "About",
+    "DOCS": "Docs",
+    "SUPPORT": "Support",
+    "GALLERY": "Gallery"
+  }
 }

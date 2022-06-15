@@ -5,8 +5,9 @@ nav {
   padding: 0 $rhythm;
   font-family: $primary-font;
   height: $rhythm * 6;
+  border-bottom: 1px solid var(--border-primary);
 
-  button {
+  .nav-icon {
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -19,22 +20,64 @@ nav {
       margin-left: $rhythm !important;
       font-size: $rhythm * 2;
       font-weight: bold;
+      color: var(--medium-grey);
     }
   }
 
-  ul {
+  .nav-links {
     display: flex;
     margin: 0;
     padding: 0;
 
+    @include tablet {
+      display: none;
+      position: fixed;
+      top: $rhythm * 6;
+      left: 0;
+      width: 100%;
+      background-color: var(--dialog-bg);
+      border-radius: radius(1);
+      box-shadow: 15px 15px 45px var(--black-20);
+      flex-direction: column;
+      padding: $rhythm;
+    }
+
+    &[data-open="true"] {
+      display: flex;
+    }
+
     li {
+      cursor: pointer;
       list-style: none;
       margin-right: $rhythm * 2.5;
-      font-size: $rhythm * 1.5;
+      font-size: $rhythm + 4;
+      color: var(--medium-grey);
+
+      @include tablet {
+        margin: 0;
+        margin-bottom: $rhythm;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
 
       &:last-child {
         margin-right: 0;
       }
+    }
+  }
+
+  .nav-toggle {
+    display: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+
+    @include tablet {
+      display: block;
     }
   }
 }

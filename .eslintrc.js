@@ -90,5 +90,14 @@ module.exports = {
 
     // Disabled to use nextjs Link component with anchor tag
     'jsx-a11y/anchor-is-valid': 'off',
+
+    // Disables certain imports to allow usage of ts script short-hand imports
+    'import/no-unresolved': ['error', {
+      ignore: [
+        '@constants',
+        '@icons',
+        '@hooks',
+      ],
+    }],
   },
 };

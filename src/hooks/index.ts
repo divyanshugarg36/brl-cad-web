@@ -1,0 +1,1 @@
+export { useOutside } from './useOutside';
