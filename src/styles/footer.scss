@@ -40,6 +40,7 @@ footer {
       li {
         list-style: none;
         margin-right: $rhythm * 5;
+        color: var(--dark-grey);
 
         @include tablet {
           margin: 0;

@@ -19,12 +19,14 @@ export const Footer: React.FC<IProps> = () => {
   const footerLinks = (links: ConstantData[]) => (
     <ul>
       {links.map((item) => (
-        <Link
-          key={item.value}
-          href={item.value}
-        >
-          <li>{item.title}</li>
-        </Link>
+        <li>
+          <Link
+            key={item.value}
+            href={item.value}
+          >
+            <a>{item.title}</a>
+          </Link>
+        </li>
       ))}
     </ul>
   );
@@ -33,9 +35,11 @@ export const Footer: React.FC<IProps> = () => {
     <footer>
       <div className="footer-link-section">
         {footerLinks(FIRST_THREE)}
-        <div className="footer-logo">
-          <Image src={BrlLogo.src} alt="BRL-CAD" width={72} height={72} />
-        </div>
+        <Link href="/">
+          <a className="footer-logo">
+            <Image src={BrlLogo.src} alt="BRL-CAD" width={72} height={72} />
+          </a>
+        </Link>
         {footerLinks(LAST_THREE)}
       </div>
       <div className="footer-social">
