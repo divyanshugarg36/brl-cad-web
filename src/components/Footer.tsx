@@ -19,11 +19,8 @@ export const Footer: React.FC<IProps> = () => {
   const footerLinks = (links: ConstantData[]) => (
     <ul>
       {links.map((item) => (
-        <li>
-          <Link
-            key={item.value}
-            href={item.value}
-          >
+        <li key={item.value}>
+          <Link href={item.value}>
             <a>{item.title}</a>
           </Link>
         </li>
@@ -51,7 +48,7 @@ export const Footer: React.FC<IProps> = () => {
             youtube: YoutubeIcon,
           }[item.title as 'facebook' | 'linkedin' | 'twitter' | 'youtube'];
           return (
-            <Link href={item.value}><a><Icon /></a></Link>
+            <Link key={item.value} href={item.value}><a><Icon /></a></Link>
           );
         })}
       </div>

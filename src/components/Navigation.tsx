@@ -21,11 +21,8 @@ export const Navigation: React.FC<IProps> = () => {
       </Link>
       <ul className="nav-links" data-open={isOpen}>
         {NAVIGATION_DATA.map((item) => (
-          <li>
-            <Link
-              key={item.value}
-              href={item.value}
-            >
+          <li key={item.value}>
+            <Link href={item.value}>
               <a>{item.title}</a>
             </Link>
           </li>
