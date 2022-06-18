@@ -1,6 +1,6 @@
 import React from 'react';
 
-export { NavHamburger } from './NavHamburger';
+export { NavHamburgerIcon } from './NavHamburger';
 
 export interface IconProps {
   onClick?: any;

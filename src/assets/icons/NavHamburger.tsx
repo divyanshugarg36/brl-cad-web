@@ -1,8 +1,6 @@
-import * as React from 'react';
-
 import { IconProps } from '.';
 
-export const NavHamburger = (props: IconProps) => (
+export const NavHamburgerIcon = (props: IconProps) => (
   <svg
     width={18}
     height={12}

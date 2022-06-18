@@ -1,6 +1,6 @@
 import { NAVIGATION_DATA } from '@constants';
 import { useOutside } from '@hooks';
-import { NavHamburger } from '@icons';
+import { NavHamburgerIcon } from '@icons';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -18,10 +18,17 @@ export const Navigation: React.FC<IProps> = () => {
         <h1>BRL-CAD</h1>
       </button>
       <ul className="nav-links" data-open={isOpen}>
-        {NAVIGATION_DATA.map((item) => (<Link href={item.value}><li>{item.title}</li></Link>))}
+        {NAVIGATION_DATA.map((item) => (
+          <Link
+            key={item.value}
+            href={item.value}
+          >
+            <li>{item.title}</li>
+          </Link>
+        ))}
       </ul>
       <button type="button" className="nav-toggle" onClick={() => setIsOpen(!isOpen)}>
-        <NavHamburger />
+        <NavHamburgerIcon />
       </button>
     </nav>
   );
