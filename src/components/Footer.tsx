@@ -1,4 +1,4 @@
-import { ConstantData, NAVIGATION_DATA } from '@constants';
+import { ConstantData, NAVIGATION_DATA, SOCIAL_DATA } from '@constants';
 import {
   FacebookIcon, LinkedInIcon, TwitterIcon, YoutubeIcon,
 } from '@icons';
@@ -39,10 +39,17 @@ export const Footer: React.FC<IProps> = () => {
         {footerLinks(LAST_THREE)}
       </div>
       <div className="footer-social">
-        <Link href=""><a><TwitterIcon /></a></Link>
-        <Link href=""><a><LinkedInIcon /></a></Link>
-        <Link href=""><a><FacebookIcon /></a></Link>
-        <Link href=""><a><YoutubeIcon /></a></Link>
+        {SOCIAL_DATA.map((item) => {
+          const Icon = {
+            facebook: FacebookIcon,
+            linkedin: LinkedInIcon,
+            twitter: TwitterIcon,
+            youtube: YoutubeIcon,
+          }[item.title as 'facebook' | 'linkedin' | 'twitter' | 'youtube'];
+          return (
+            <Link href={item.value}><a><Icon /></a></Link>
+          );
+        })}
       </div>
       <Link href="https://bestpractices.coreinfrastructure.org/projects/66">
         <a className="footer-practices">
