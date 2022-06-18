@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { Footer } from './Footer';
 import { Navigation } from './Navigation';
 
 interface IProps {
@@ -10,6 +11,6 @@ export const Layout: React.FC<IProps> = ({ children }) => (
   <>
     <Navigation />
     {children}
-    <div>Footer</div>
+    <Footer />
   </>
 );

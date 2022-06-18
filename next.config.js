@@ -7,6 +7,10 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
+  images: {
+    dangerouslyAllowSVG: true,
+    domains: ['bestpractices.coreinfrastructure.org'],
+  },
 };
 
 module.exports = nextConfig;

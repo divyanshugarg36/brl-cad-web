@@ -7,5 +7,9 @@
     "DOCS": "Docs",
     "SUPPORT": "Support",
     "GALLERY": "Gallery"
+  },
+  "FOOTER": {
+    "TITLE": "BRL-CAD © 2021",
+    "DESCRIPTION": "All trademarks referenced herein are the properties of their respective owners. This site is not sponsored, endorsed, or run by the U.S. Government."
   }
 }
