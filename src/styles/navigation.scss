@@ -1,11 +1,12 @@
 nav {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 $rhythm;
   font-family: $primary-font;
   height: $rhythm * 6;
-  border-bottom: 1px solid var(--border-primary);
+  z-index: 2;
 
   .nav-icon {
     display: flex;

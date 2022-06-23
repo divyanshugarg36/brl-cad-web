@@ -1,6 +1,13 @@
 :root {
   --white: #FFFFFF;
 
+  $primary-color: #D0245E;
+
+  --primary-color: #{$primary-color};
+  --secondary-color: #888888;
+
+  --button-gradient: linear-gradient(82.8deg, #{$primary-color} 5%, #{lighten($primary-color, 10%)} 95%);
+
   $black: #000000;
   --black-10: #{rgba($black, 0.1)};
   --black-20: #{rgba($black, 0.2)};

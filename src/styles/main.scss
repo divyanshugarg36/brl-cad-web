@@ -1,0 +1,50 @@
+main {
+  display: flex;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: linear-gradient(135deg, rgba(11, 54, 91, 1) 0%, rgba(107, 16, 17, 1) 100%);
+  position: relative;
+
+  #tsparticles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    transform: translate(0, 0);
+  }
+
+  .main-container {
+    @include flex-center;
+    flex-direction: column;
+    margin: auto;
+    z-index: 1;
+
+    h1 {
+      font-size: 96px;
+      line-height: 1;
+      margin-bottom: $rhythm * 2;
+
+      span {
+        &:nth-child(1) {
+          color: var(--primary-color);
+        }
+
+        &:nth-child(2) {
+          color: var(--secondary-color);
+        }
+
+        &:nth-child(3) {
+          color: var(--white);
+        }
+      }
+    }
+
+    p {
+      font-size: 36px;
+      color: var(--white);
+      margin-bottom: $rhythm * 2;
+    }
+  }
+}

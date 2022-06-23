@@ -9,6 +9,7 @@ footer {
     border-bottom: 1px solid var(--border-primary);
     padding: 0 $rhythm * 3;
     padding-bottom: $rhythm;
+    margin: 0 $rhythm * 2;
     margin-bottom: $rhythm * 3;
 
     @include tablet {

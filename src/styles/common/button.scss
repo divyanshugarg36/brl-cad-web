@@ -1,0 +1,14 @@
+.brl-button {
+  color: var(--primary-color);
+  height: $rhythm * 5;
+  padding: 0 $rhythm * 4;
+  border-radius: radius(2);
+
+  box-shadow: 15px 15px 45px var(--black-20);
+  border: none;
+
+  font-weight: 700;
+  font-size: 18px;
+  background: var(--white);
+  text-transform: uppercase;
+}

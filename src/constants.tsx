@@ -1,5 +1,6 @@
 import React, { ReactElement } from 'react';
 import { Translation } from 'react-i18next';
+import { IOptions, RecursivePartial } from 'tsparticles-engine';
 
 export interface ConstantData {
   title: string | ReactElement;
@@ -21,3 +22,68 @@ export const SOCIAL_DATA: ConstantData[] = [
   { title: 'linkedin', value: 'https://www.linkedin.com/in/brlcad' },
   { title: 'youtube', value: 'https://www.youtube.com/results?search_query=brl+-+cad' },
 ];
+
+export const particleOptions: RecursivePartial<IOptions> = {
+  fpsLimit: 120,
+  interactivity: {
+    events: {
+      onClick: {
+        enable: true,
+        mode: 'push',
+      },
+      onHover: {
+        enable: true,
+        mode: 'repulse',
+      },
+      resize: true,
+    },
+    modes: {
+      push: {
+        quantity: 4,
+      },
+    },
+  },
+  particles: {
+    color: {
+      value: '#FFFFFF',
+    },
+    links: {
+      color: '#ffffff',
+      distance: 150,
+      enable: true,
+      opacity: 0.5,
+      width: 1,
+    },
+    collisions: {
+      enable: true,
+    },
+    move: {
+      direction: 'none',
+      enable: true,
+      outModes: {
+        default: 'bounce',
+      },
+      speed: 4,
+    },
+    number: {
+      density: {
+        enable: true,
+        area: 800,
+      },
+      value: 40,
+      max: 40,
+    },
+    opacity: {
+      value: 0.5,
+    },
+    shape: {
+      type: ['square', 'circle', 'triangle'],
+    },
+    size: {
+      value: { min: 5, max: 5 },
+    },
+  },
+  detectRetina: true,
+};
+
+export const classNames = (...classes: (string | boolean | undefined)[]) => classes.filter(Boolean).join(' ');
