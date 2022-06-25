@@ -2,8 +2,12 @@ main {
   display: flex;
   width: 100%;
   aspect-ratio: 16/9;
-  background: linear-gradient(135deg, rgba(11, 54, 91, 1) 0%, rgba(107, 16, 17, 1) 100%);
+  background: var(--main-gradient);
   position: relative;
+
+  @include tablet {
+    aspect-ratio: 16/12;
+  }
 
   #tsparticles {
     position: absolute;
@@ -13,18 +17,30 @@ main {
     height: 100%;
     width: 100%;
     transform: translate(0, 0);
+    z-index: 0;
   }
 
   .main-container {
     @include flex-center;
+    height: 100%;
+    width: 100%;
     flex-direction: column;
     margin: auto;
     z-index: 1;
+    background-color: rgba($black, 0.2);
 
     h1 {
       font-size: 96px;
       line-height: 1;
       margin-bottom: $rhythm * 2;
+
+      @include tablet {
+        font-size: 72px;
+      }
+
+      @include mobile {
+        font-size: 60px;
+      }
 
       span {
         &:nth-child(1) {
@@ -45,6 +61,21 @@ main {
       font-size: 36px;
       color: var(--white);
       margin-bottom: $rhythm * 2;
+
+      @include tablet {
+        font-size: 24px;
+      }
+
+      @include mobile {
+        font-size: 18px;
+      }
+    }
+
+    .main-button {
+      @include tablet {
+        height: $rhythm * 4;
+        padding: 0 $rhythm * 2;
+      }
     }
   }
 }

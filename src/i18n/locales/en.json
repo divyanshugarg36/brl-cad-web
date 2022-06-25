@@ -8,6 +8,11 @@
     "SUPPORT": "Support",
     "GALLERY": "Gallery"
   },
+  "MAIN": {
+    "TITLE": "<1>BRL</1><1>-</1><1>CAD</1>",
+    "TAG": "Think • Invent • Create",
+    "BUTTON": "CONTRIBUTE"
+  },
   "FOOTER": {
     "TITLE": "BRL-CAD © 2021",
     "DESCRIPTION": "All trademarks referenced herein are the properties of their respective owners. This site is not sponsored, endorsed, or run by the U.S. Government."

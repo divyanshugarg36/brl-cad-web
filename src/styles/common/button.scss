@@ -1,4 +1,6 @@
 .brl-button {
+  @include flex-center;
+  cursor: pointer;
   color: var(--primary-color);
   height: $rhythm * 5;
   padding: 0 $rhythm * 4;

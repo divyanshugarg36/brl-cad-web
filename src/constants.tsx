@@ -23,24 +23,21 @@ export const SOCIAL_DATA: ConstantData[] = [
   { title: 'youtube', value: 'https://www.youtube.com/results?search_query=brl+-+cad' },
 ];
 
+export const IRC_LINK = 'https://brlcad.zulipchat.com/';
+
 export const particleOptions: RecursivePartial<IOptions> = {
   fpsLimit: 120,
   interactivity: {
     events: {
       onClick: {
         enable: true,
-        mode: 'push',
+        mode: 'attract',
       },
       onHover: {
         enable: true,
-        mode: 'repulse',
+        mode: 'trail',
       },
       resize: true,
-    },
-    modes: {
-      push: {
-        quantity: 4,
-      },
     },
   },
   particles: {
@@ -48,7 +45,7 @@ export const particleOptions: RecursivePartial<IOptions> = {
       value: '#FFFFFF',
     },
     links: {
-      color: '#ffffff',
+      color: '#FFFFFF',
       distance: 150,
       enable: true,
       opacity: 0.5,
@@ -58,7 +55,7 @@ export const particleOptions: RecursivePartial<IOptions> = {
       enable: true,
     },
     move: {
-      direction: 'none',
+      direction: 'outside',
       enable: true,
       outModes: {
         default: 'bounce',
@@ -80,7 +77,7 @@ export const particleOptions: RecursivePartial<IOptions> = {
       type: ['square', 'circle', 'triangle'],
     },
     size: {
-      value: { min: 5, max: 5 },
+      value: { min: 4, max: 6 },
     },
   },
   detectRetina: true,

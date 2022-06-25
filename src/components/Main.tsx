@@ -1,6 +1,6 @@
-import { particleOptions } from '@constants';
-import Link from 'next/link';
+import { IRC_LINK, particleOptions } from '@constants';
 import React from 'react';
+import { Trans, useTranslation } from 'react-i18next';
 import Particles, { } from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import { Engine } from 'tsparticles-engine';
@@ -10,16 +10,12 @@ import { Button } from './common';
 interface IProps { }
 
 export const Main: React.FC<IProps> = () => {
+  const { t } = useTranslation();
   const particlesInit = async (main: Engine) => {
     await loadFull(main);
   };
   return (
     <main>
-      <div className="main-container">
-        <h1><span>BRL</span><span>-</span><span>CAD</span></h1>
-        <p>Think • Invent • Create</p>
-        <Button>Contribute</Button>
-      </div>
       <Particles
         width="100%"
         height="100%"
@@ -27,6 +23,24 @@ export const Main: React.FC<IProps> = () => {
         canvasClassName="particles"
         options={particleOptions}
       />
+      <div className="main-container">
+        <h1>
+          <Trans i18nKey="MAIN.TITLE">
+            -
+            <span />
+            -
+          </Trans>
+        </h1>
+        <p>{t('MAIN.TAG')}</p>
+        <Button
+          elementType="a"
+          href={IRC_LINK}
+          className="brl-button main-button"
+          target="_blank"
+        >
+          {t('MAIN.BUTTON')}
+        </Button>
+      </div>
 
     </main>
   );
