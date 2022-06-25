@@ -9,7 +9,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>BRL-CAD: Open Source Solid Modeling</title>
+        <title>{t('TITLE')}</title>
       </Head>
       <Main />
     </>
