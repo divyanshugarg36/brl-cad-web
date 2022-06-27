@@ -72,6 +72,8 @@ main {
     }
 
     .main-button {
+      padding: 0 $rhythm * 4;
+
       @include tablet {
         height: $rhythm * 4;
         padding: 0 $rhythm * 2;

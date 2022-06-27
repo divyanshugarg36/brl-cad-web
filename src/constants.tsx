@@ -23,7 +23,10 @@ export const SOCIAL_DATA: ConstantData[] = [
   { title: 'youtube', value: 'https://www.youtube.com/results?search_query=brl+-+cad' },
 ];
 
-export const IRC_LINK = 'https://brlcad.zulipchat.com/';
+export const LINKS = {
+  IRC_LINK: 'https://brlcad.zulipchat.com/',
+  LEARN_MORE_PDF: 'https://brlcad.org/HACKING_BRL-CAD.pdf',
+};
 
 export const particleOptions: RecursivePartial<IOptions> = {
   fpsLimit: 120,

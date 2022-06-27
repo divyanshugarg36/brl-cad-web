@@ -13,6 +13,21 @@
     "TAG": "Think • Invent • Create",
     "BUTTON": "CONTRIBUTE"
   },
+  "FEATURES": {
+    "FEATURE_1": {
+      "TITLE": "Open Source!",
+      "DESCRIPTION": "100% FREE with people all over the world contributing their thoughts. Escape vendor lock-in, for any purpose, forever."
+    },
+    "FEATURE_2": {
+      "TITLE": "Join Us!",
+      "DESCRIPTION": "Help make a better CAD system, make modeling fun. No experience necessary.",
+      "BUTTON": "Learn More (35MB PDF)"
+    },
+    "FEATURE_3": {
+      "TITLE": "Solid Modeling!",
+      "DESCRIPTION": "Hybrid CSG and B-REP kernel with innovative methods for unambiguous 3D geometry. Verification, validation, performant."
+    }
+  },
   "FOOTER": {
     "TITLE": "BRL-CAD © 2021",
     "DESCRIPTION": "All trademarks referenced herein are the properties of their respective owners. This site is not sponsored, endorsed, or run by the U.S. Government."

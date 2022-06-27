@@ -1,4 +1,4 @@
-import { IRC_LINK, particleOptions } from '@constants';
+import { LINKS, particleOptions } from '@constants';
 import React from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 import Particles, { } from 'react-tsparticles';
@@ -34,8 +34,8 @@ export const Main: React.FC<IProps> = () => {
         <p>{t('MAIN.TAG')}</p>
         <Button
           elementType="a"
-          href={IRC_LINK}
-          className="brl-button main-button"
+          href={LINKS.IRC_LINK}
+          className="main-button"
           target="_blank"
         >
           {t('MAIN.BUTTON')}
