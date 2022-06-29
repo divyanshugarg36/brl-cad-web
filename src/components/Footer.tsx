@@ -1,4 +1,6 @@
-import { ConstantData, NAVIGATION_DATA, SOCIAL_DATA } from '@constants';
+import {
+  BEST_PRACTICES, ConstantData, NAVIGATION_DATA, SOCIAL_DATA,
+} from '@constants';
 import {
   FacebookIcon, LinkedInIcon, TwitterIcon, YoutubeIcon,
 } from '@icons';
@@ -52,9 +54,9 @@ export const Footer: React.FC<IProps> = () => {
           );
         })}
       </div>
-      <Link href="https://bestpractices.coreinfrastructure.org/projects/66">
+      <Link href={BEST_PRACTICES.HREF}>
         <a className="footer-practices">
-          <Image alt="best practices" src="https://bestpractices.coreinfrastructure.org/projects/66/badge" height={20} width={184} />
+          <Image alt="best practices" src={BEST_PRACTICES.IMAGE} height={20} width={184} />
         </a>
       </Link>
       <div className="footer-copyright">

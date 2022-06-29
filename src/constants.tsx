@@ -21,3 +21,8 @@ export const SOCIAL_DATA: ConstantData[] = [
   { title: 'linkedin', value: 'https://www.linkedin.com/in/brlcad' },
   { title: 'youtube', value: 'https://www.youtube.com/results?search_query=brl+-+cad' },
 ];
+
+export const BEST_PRACTICES = {
+  HREF: 'https://bestpractices.coreinfrastructure.org/projects/66',
+  IMAGE: 'https://bestpractices.coreinfrastructure.org/projects/66/badge',
+};
