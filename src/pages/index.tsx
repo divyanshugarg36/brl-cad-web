@@ -6,6 +6,7 @@ import { Features, Main } from '../components';
 
 const Home: NextPage = () => {
   const { t } = useTranslation();
+
   return (
     <>
       <Head>

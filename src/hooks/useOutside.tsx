@@ -11,6 +11,7 @@ type OutsideReturn = [
 export const useOutside = (initial = false, callback = () => { }): OutsideReturn => {
   const [value, setValue] = useState(initial);
   const ref = useRef<HTMLElement>();
+
   useEffect(() => {
     const listener = (event: MouseEvent | TouchEvent | any) => {
       if (ref.current && !ref.current.contains(event?.target)) {
@@ -20,10 +21,12 @@ export const useOutside = (initial = false, callback = () => { }): OutsideReturn
     };
     document.addEventListener('mousedown', listener);
     document.addEventListener('touchstart', listener);
+
     return () => {
       document.removeEventListener('mousedown', listener);
       document.removeEventListener('touchstart', listener);
     };
   });
+
   return [value, setValue, ref];
 };
