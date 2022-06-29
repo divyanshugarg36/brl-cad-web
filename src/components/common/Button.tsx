@@ -14,12 +14,14 @@ export const Button: React.FC<IProps> = ({
 }) => {
   const Element = elementType as 'button' | 'a';
   const LinkElement = href ? Link : React.Fragment;
+
   return (
     <LinkElement href={href}>
       <Element type="button" className={classNames('brl-button', className)} {...props}>{children}</Element>
     </LinkElement>
   );
 };
+
 Button.defaultProps = {
   className: '',
   elementType: 'button',

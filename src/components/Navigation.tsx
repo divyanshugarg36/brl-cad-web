@@ -11,6 +11,7 @@ interface IProps { }
 
 export const Navigation: React.FC<IProps> = () => {
   const [isOpen, setIsOpen, navContainer] = useOutside(false);
+
   return (
     <nav ref={navContainer}>
       <Link href="/">

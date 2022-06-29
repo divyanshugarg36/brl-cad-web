@@ -1,7 +1,5 @@
 .features {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  @include flex($wrap: wrap, $justifyContent: space-around);
   padding: 0 $rhythm * 2;
   padding-top: $rhythm * 6;
 

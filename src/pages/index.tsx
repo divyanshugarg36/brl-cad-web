@@ -8,6 +8,7 @@ import {
 
 const Home: NextPage = () => {
   const { t } = useTranslation();
+
   return (
     <>
       <Head>

@@ -9,6 +9,7 @@ interface IProps { }
 
 export const Features: React.FC<IProps> = () => {
   const { t } = useTranslation();
+
   const features = [
     {
       index: 1,
@@ -31,6 +32,7 @@ export const Features: React.FC<IProps> = () => {
       description: t('FEATURES.FEATURE_3.DESCRIPTION'),
     },
   ];
+
   return (
     <section className="features">
       {features.map(({

@@ -34,6 +34,7 @@ export const FeatureBlock: React.FC<IProps> = ({
     )}
   </div>
 );
+
 FeatureBlock.defaultProps = {
   className: '',
   link: '',
