@@ -2,10 +2,62 @@ $primary-font:"Roboto";
 
 $rhythm: 12px;
 
-@mixin flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@mixin flex($display: flex,
+  $direction: null,
+  $placeContent: null,
+  $placeItems: null,
+  $wrap: null,
+  $shrink: null,
+  $grow: null,
+  $alignContent: null,
+  $justifyContent: null,
+  $alignItems: null,
+  $justifyItems: null) {
+  display: $display;
+
+  @if $direction {
+    flex-direction: $direction;
+  }
+
+  @if $placeContent==null {
+    @if $alignContent {
+      align-content: $alignContent;
+    }
+
+    @if $justifyContent {
+      justify-content: $justifyContent;
+    }
+  }
+
+  @else {
+    place-content: $placeContent;
+  }
+
+  @if $placeItems==null {
+    @if $alignItems {
+      align-items: $alignItems;
+    }
+
+    @if $justifyItems {
+      justify-items: $justifyItems;
+    }
+  }
+
+  @else {
+    place-items: $placeItems;
+  }
+
+  @if $wrap {
+    flex-wrap: $wrap;
+  }
+
+  @if $shrink {
+    flex-shrink: $shrink;
+  }
+
+  @if $grow {
+    flex-grow: $grow;
+  }
 }
 
 @mixin text-ellipsis {

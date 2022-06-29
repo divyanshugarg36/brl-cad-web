@@ -1,5 +1,5 @@
 main {
-  display: flex;
+  @include flex();
   width: 100%;
   aspect-ratio: 16/9;
   background: var(--main-gradient);
@@ -10,10 +10,10 @@ main {
   }
 
   #tsparticles {
+    @include flex();
     position: absolute;
     top: 0;
     left: 0;
-    display: flex;
     height: 100%;
     width: 100%;
     transform: translate(0, 0);
@@ -21,7 +21,7 @@ main {
   }
 
   .main-container {
-    @include flex-center;
+    @include flex($justifyContent: center, $alignItems: center);
     height: 100%;
     width: 100%;
     flex-direction: column;
