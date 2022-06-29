@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import { useTranslation } from 'react-i18next';
 
-import { Features, Main } from '../components';
+import { Features, Main, What } from '../components';
 
 const Home: NextPage = () => {
   const { t } = useTranslation();
@@ -13,6 +13,7 @@ const Home: NextPage = () => {
       </Head>
       <Main />
       <Features />
+      <What />
     </>
   );
 };

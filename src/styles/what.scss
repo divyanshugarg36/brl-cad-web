@@ -1,0 +1,28 @@
+.what {
+  background-color: var(--dark-grey);
+  color: var(--white);
+  padding: $rhythm * 4;
+
+  @include tablet {
+    padding: $rhythm * 4 $rhythm;
+  }
+
+  h1 {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: $rhythm;
+
+    @include tablet {
+      font-size: 36px;
+    }
+  }
+
+  p {
+    text-align: center;
+    font-size: 18px;
+
+    @include tablet {
+      font-size: 16px;
+    }
+  }
+}

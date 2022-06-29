@@ -28,6 +28,10 @@
       "DESCRIPTION": "Hybrid CSG and B-REP kernel with innovative methods for unambiguous 3D geometry. Verification, validation, performant."
     }
   },
+  "WHAT": {
+    "TITLE": "What is BRL-CAD?",
+    "DESCRIPTION": "BRL-CAD is a powerful open source cross-platform solid modeling system that includes interactive geometry editing, high-performance ray-tracing for rendering and geometric analysis, a system performance analysis benchmark suite, geometry libraries for application developers, and more than 30 years of active development."
+  },
   "FOOTER": {
     "TITLE": "BRL-CAD © 2021",
     "DESCRIPTION": "All trademarks referenced herein are the properties of their respective owners. This site is not sponsored, endorsed, or run by the U.S. Government."
