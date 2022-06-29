@@ -14,6 +14,7 @@ export const Main: React.FC<IProps> = () => {
   const particlesInit = async (main: Engine) => {
     await loadFull(main);
   };
+
   return (
     <main>
       <Particles
@@ -41,7 +42,6 @@ export const Main: React.FC<IProps> = () => {
           {t('MAIN.BUTTON')}
         </Button>
       </div>
-
     </main>
   );
 };
