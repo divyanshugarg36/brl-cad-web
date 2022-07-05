@@ -7,7 +7,7 @@ import Link from 'next/link';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { BrlLogo } from '../assets/images';
+import { brlLogo } from '../assets/images';
 
 interface IProps { }
 
@@ -34,7 +34,7 @@ export const Footer: React.FC<IProps> = () => {
         {footerLinks(FIRST_THREE)}
         <Link href="/">
           <a className="footer-logo">
-            <Image src={BrlLogo.src} alt="BRL-CAD" width={72} height={72} />
+            <Image src={brlLogo.src} alt="BRL-CAD" width={72} height={72} />
           </a>
         </Link>
         {footerLinks(LAST_THREE)}

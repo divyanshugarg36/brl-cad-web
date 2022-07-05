@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-import { BrlLogo } from '../assets/images';
+import { brlLogo } from '../assets/images';
 
 interface IProps { }
 
@@ -15,7 +15,7 @@ export const Navigation: React.FC<IProps> = () => {
     <nav ref={navContainer}>
       <Link href="/">
         <a className="nav-icon">
-          <Image src={BrlLogo.src} alt="BRL-CAD" width={48} height={48} />
+          <Image src={brlLogo.src} alt="BRL-CAD" width={48} height={48} />
           <h1>BRL-CAD</h1>
         </a>
       </Link>

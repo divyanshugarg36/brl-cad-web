@@ -16,6 +16,7 @@
   &--small {
     font-size: 14px;
     height: $rhythm * 3;
+    border-radius: radius(1);
   }
 
   &--reverse {
