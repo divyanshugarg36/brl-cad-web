@@ -1,0 +1,78 @@
+.project-section {
+  margin: auto;
+  padding: $rhythm * 10;
+
+  @include tablet-large {
+    padding: $rhythm *5;
+  }
+
+  @include tablet {
+    padding: $rhythm;
+  }
+
+  .project-main {
+    @include flex();
+    background-color: var(--black-100);
+    color: var(--white);
+    padding: $rhythm / 4;
+    margin-bottom: $rhythm * 3;
+
+    &>span {
+      min-width: $rhythm * 35;
+      min-height: $rhythm * 35;
+      max-width: $rhythm * 35;
+      max-height: $rhythm * 35;
+
+      @include tablet-large {
+        display: none !important;
+      }
+    }
+
+    &-body {
+      padding: $rhythm * 2 $rhythm * 4;
+
+      h1 {
+        font-size: 36px;
+        margin-bottom: $rhythm;
+      }
+
+      p {
+        font-size: 16px;
+        margin-bottom: $rhythm;
+      }
+
+      a {
+        cursor: pointer;
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        border: none;
+        width: fit-content;
+        height: fit-content;
+
+        svg {
+          fill: var(--white);
+          height: $rhythm * 6;
+          width: $rhythm * 6;
+        }
+      }
+    }
+  }
+
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: $rhythm * 3;
+    row-gap: $rhythm * 3;
+    margin-bottom: $rhythm * 3;
+
+    @include tablet {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  button {
+    margin: auto;
+    width: $rhythm * 10;
+  }
+}
