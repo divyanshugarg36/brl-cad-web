@@ -1,0 +1,21 @@
+.about-us {
+  padding: $rhythm * 6 0;
+
+  &-heading {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--dark-grey);
+    margin-bottom: $rhythm * 4;
+  }
+
+  &-body {
+    @include flex($justifyContent: space-evenly, $wrap: wrap);
+    row-gap: $rhythm * 4;
+
+    @include tablet {
+      row-gap: $rhythm * 3;
+      column-gap: $rhythm * 3;
+    }
+  }
+}

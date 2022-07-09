@@ -1,3 +1,4 @@
+export { AboutUs } from './AboutUs';
 export { Features } from './Features';
 export { Footer } from './Footer';
 export { Highlights } from './Highlights';

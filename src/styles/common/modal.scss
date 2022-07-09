@@ -1,0 +1,58 @@
+.modal {
+  @include flex($direction: column);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--white);
+  box-shadow: 15px 15px 45px var(--black-20);
+  z-index: 99;
+  border-radius: radius(3);
+  max-width: 900px;
+  max-height: 900px;
+  width: calc(100% - $rhythm * 2);
+  height: calc(100% - $rhythm * 2);
+
+  &-header {
+    position: relative;
+    border-bottom: 1px solid var(--border-primary);
+
+    h1 {
+      @include flex($alignItems: center, $justifyContent: center);
+      font-weight: normal;
+      font-size: 28px;
+      height: $rhythm * 5;
+      color: var(--dark-grey);
+      text-align: center;
+      padding: $rhythm;
+
+      @include tablet-medium {
+        font-size: 20px;
+      }
+    }
+
+    button {
+      position: absolute;
+      width: $rhythm * 3;
+      height: $rhythm * 3;
+      padding: 0;
+      right: $rhythm;
+      top: $rhythm;
+    }
+  }
+
+  &-body {
+    font-size: 18px;
+    color: var(--medium-grey);
+    margin-bottom: $rhythm;
+    padding: $rhythm;
+    text-align: justify;
+    overflow: auto;
+    height: 100%;
+    @include scroll-bar;
+
+    @include tablet-medium {
+      font-size: 16px;
+    }
+  }
+}

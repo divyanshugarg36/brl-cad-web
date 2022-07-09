@@ -1,5 +1,6 @@
 import React from 'react';
 
+export { CrossIcon } from './Cross';
 export { FacebookIcon } from './Facebook';
 export { HeartIcon } from './Heart';
 export { LinkedInIcon } from './LinkedIn';

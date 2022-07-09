@@ -69,3 +69,50 @@ $rhythm: 12px;
 @function radius($value:200) {
   @return $value * 5px;
 }
+
+@mixin scroll-bar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color) transparent;
+
+  &::-webkit-scrollbar {
+    width: $rhythm / 2;
+    height: $rhythm / 2;
+  }
+
+  &::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border: 0 none var(--primary-color);
+    border-radius: radius();
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+    border: 0 none var(--primary-color);
+    border-radius: radius(4);
+  }
+
+  &::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+  }
+
+  &::-webkit-scrollbar-thumb:active {
+    background: var(--primary-color);
+  }
+
+  &::-webkit-scrollbar-track:hover {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-track:active {
+    background: transparent;
+  }
+}
