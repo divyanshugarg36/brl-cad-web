@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { useTranslation } from 'react-i18next';
 
 import {
-  Features, Highlights, Main, What,
+  Features, Highlights, Information, Main,
 } from '../components';
 
 const Home: NextPage = () => {
@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       </Head>
       <Main />
       <Features />
-      <What />
+      <Information />
       <Highlights />
     </>
   );
