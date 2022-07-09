@@ -13,19 +13,16 @@ export const Highlights: React.FC<IProps> = () => {
   const { t } = useTranslation();
   const highlights = [
     {
-      index: 1,
       image: crossPlatfom,
       title: t('HIGHLIGHTS.HIGHLIGHT_1.TITLE'),
       description: t('HIGHLIGHTS.HIGHLIGHT_1.DESCRIPTION'),
     },
     {
-      index: 2,
       image: trustedMilitary,
       title: t('HIGHLIGHTS.HIGHLIGHT_2.TITLE'),
       description: t('HIGHLIGHTS.HIGHLIGHT_2.DESCRIPTION'),
     },
     {
-      index: 3,
       image: since1979,
       title: t('HIGHLIGHTS.HIGHLIGHT_3.TITLE'),
       description: t('HIGHLIGHTS.HIGHLIGHT_3.DESCRIPTION'),
@@ -33,7 +30,6 @@ export const Highlights: React.FC<IProps> = () => {
       link: LINKS.WIKIPEDIA,
     },
     {
-      index: 4,
       image: freeOpen,
       title: t('HIGHLIGHTS.HIGHLIGHT_4.TITLE'),
       description: t('HIGHLIGHTS.HIGHLIGHT_4.DESCRIPTION'),
@@ -44,11 +40,11 @@ export const Highlights: React.FC<IProps> = () => {
       <h1 className="highlights-heading">{t('HIGHLIGHTS.TITLE')}</h1>
       <div>
         {highlights.map(({
-          index, description, title, link, linkName, image,
-        }) => (
+          description, title, link, linkName, image,
+        }, index) => (
           <HighlightBlock
-            key={index}
-            isReverse={!(index % 2)}
+            key={title}
+            isReverse={!!(index % 2)}
             title={title}
             description={description}
             image={image}
