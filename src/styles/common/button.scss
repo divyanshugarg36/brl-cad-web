@@ -1,5 +1,5 @@
 .brl-button {
-  @include flex-center;
+  @include flex($justifyContent: center, $alignItems: center);
   cursor: pointer;
   background: var(--white);
   color: var(--primary-color);
@@ -16,6 +16,7 @@
   &--small {
     font-size: 14px;
     height: $rhythm * 3;
+    border-radius: radius(1);
   }
 
   &--reverse {

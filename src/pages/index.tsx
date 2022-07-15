@@ -2,7 +2,9 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import { useTranslation } from 'react-i18next';
 
-import { Features, Information, Main } from '../components';
+import {
+  Features, Highlights, Information, Main,
+} from '../components';
 
 const Home: NextPage = () => {
   const { t } = useTranslation();
@@ -15,6 +17,7 @@ const Home: NextPage = () => {
       <Main />
       <Features />
       <Information />
+      <Highlights />
     </>
   );
 };

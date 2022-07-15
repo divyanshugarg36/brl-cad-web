@@ -1,11 +1,10 @@
 import { NAVIGATION_DATA } from '@constants';
 import { useOutside } from '@hooks';
 import { NavHamburgerIcon } from '@icons';
-import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-import { BrlLogo } from '../assets/images';
+import { BrlLogo } from './common';
 
 interface IProps { }
 
@@ -16,7 +15,7 @@ export const Navigation: React.FC<IProps> = () => {
     <nav ref={navContainer}>
       <Link href="/">
         <a className="nav-icon">
-          <Image src={BrlLogo.src} alt="BRL-CAD" width={48} height={48} />
+          <BrlLogo size="md" />
           <h1>BRL-CAD</h1>
         </a>
       </Link>
