@@ -84,3 +84,8 @@ export const particleOptions: RecursivePartial<IOptions> = {
 };
 
 export const classNames = (...classes: (string | boolean | undefined)[]) => classes.filter(Boolean).join(' ');
+
+export const BEST_PRACTICES = {
+  HREF: 'https://bestpractices.coreinfrastructure.org/projects/66',
+  IMAGE: 'https://bestpractices.coreinfrastructure.org/projects/66/badge',
+};
