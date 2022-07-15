@@ -1,3 +1,7 @@
+$primary-font:"Roboto";
+
+$rhythm: 12px;
+
 @mixin flex-center {
   display: flex;
   align-items: center;
@@ -12,8 +16,4 @@
 
 @function radius($value:200) {
   @return $value * 5px;
-}
-
-@function rhythm($value:1) {
-  @return $value * 12px;
 }

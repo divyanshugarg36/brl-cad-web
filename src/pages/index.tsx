@@ -5,14 +5,15 @@ import { useTranslation } from 'react-i18next';
 const Home: NextPage = () => {
   const { t } = useTranslation();
   return (
-    <div>
+    <>
       <Head>
-        <title>BRL-CAD</title>
-        <meta name="description" content="" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>BRL-CAD: Open Source Solid Modeling</title>
       </Head>
-      <p>{t('TITLE')}</p>
-    </div>
+      <div>
+        <p>{t('TITLE')}</p>
+        <p>Content</p>
+      </div>
+    </>
   );
 };
 

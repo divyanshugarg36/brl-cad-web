@@ -1,3 +1,24 @@
 :root {
-  $white: #FFFFFF;
+  --white: #FFFFFF;
+
+  $black: #000000;
+  --black-10: #{rgba($black, 0.1)};
+  --black-20: #{rgba($black, 0.2)};
+  --black-30: #{rgba($black, 0.3)};
+  --black-40: #{rgba($black, 0.4)};
+  --black-50: #{rgba($black, 0.5)};
+  --black-60: #{rgba($black, 0.6)};
+  --black-70: #{rgba($black, 0.7)};
+  --black-80: #{rgba($black, 0.8)};
+  --black-90: #{rgba($black, 0.9)};
+  --black-100: #{$black};
+
+  --background-grad-1: #F3F3F3;
+  --background-grad-2: #F8F3F3;
+
+  --dialog-bg: #F6F6F6;
+
+  --border-primary: #EAEAEA;
+
+  --medium-grey: #666666;
 }
