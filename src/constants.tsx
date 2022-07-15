@@ -26,6 +26,7 @@ export const SOCIAL_DATA: ConstantData[] = [
 export const LINKS = {
   IRC_LINK: 'https://brlcad.zulipchat.com/',
   LEARN_MORE_PDF: 'https://brlcad.org/HACKING_BRL-CAD.pdf',
+  WIKIPEDIA: 'https://en.wikipedia.org/wiki/BRL-CAD',
 };
 
 export const particleOptions: RecursivePartial<IOptions> = {

@@ -1,0 +1,52 @@
+.highlight {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include tablet-medium {
+    grid-template-columns: 1fr;
+  }
+
+  &--reverse {
+    direction: rtl;
+
+    @include tablet-medium {
+      direction: ltr;
+    }
+  }
+
+  &-image {
+    order: 1;
+    position: relative;
+
+    @include tablet-medium {
+      padding: $rhythm * 2;
+    }
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  &-content {
+    order: 0;
+    padding: $rhythm * 2;
+    max-width: 480px;
+    margin: auto;
+
+    @include tablet-medium {
+      max-width: unset;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: var(--dark-grey);
+      margin-bottom: $rhythm * 1.5;
+    }
+
+    p {
+      font-size: 18px;
+      color: var(--medium-grey);
+      margin-bottom: $rhythm;
+    }
+  }
+}

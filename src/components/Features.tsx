@@ -3,7 +3,7 @@ import { HeartIcon, OpenSourceIcon, SolidModelingIcon } from '@icons';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { FeatureBlock } from './common/FeatureBlock';
+import { FeatureBlock } from './common';
 
 interface IProps { }
 

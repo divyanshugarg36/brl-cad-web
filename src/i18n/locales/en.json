@@ -28,6 +28,30 @@
       "DESCRIPTION": "Hybrid CSG and B-REP kernel with innovative methods for unambiguous 3D geometry. Verification, validation, performant."
     }
   },
+  "INFORMATION": {
+    "TITLE": "What is BRL-CAD?",
+    "DESCRIPTION": "BRL-CAD is a powerful open source cross-platform solid modeling system that includes interactive geometry editing, high-performance ray-tracing for rendering and geometric analysis, a system performance analysis benchmark suite, geometry libraries for application developers, and more than 30 years of active development."
+  },
+  "HIGHLIGHTS": {
+    "TITLE": "Highlights",
+    "HIGHLIGHT_1": {
+      "TITLE": "Cross platform",
+      "DESCRIPTION": "The package is intentionally designed to be extensively cross-platform and is actively developed on and maintained for many common operating system environments including for BSD, Linux, Solaris, Mac OS X, and Windows among others. BRL-CAD is distributed in binary and source code form."
+    },
+    "HIGHLIGHT_2": {
+      "TITLE": "Trusted by U.S Military",
+      "DESCRIPTION": "BRL-CAD is choice of U.S Military. For more than 20 years, BRL-CAD has been the primary tri-service solid modeling CAD system used by the U.S. military to model weapons systems for vulnerability and lethality analyses."
+    },
+    "HIGHLIGHT_3": {
+      "TITLE": "Since 1979",
+      "DESCRIPTION": "Mike Muuss began the initial architecture and design of BRL-CAD back in 1979. Development as a unified package began in 1983. The first public release was made in 1984. BRL-CAD became an open source project on 21 December 2004.",
+      "BUTTON": "Learn More"
+    },
+    "HIGHLIGHT_4": {
+      "TITLE": "Free & Open",
+      "DESCRIPTION": "BRL-CAD respects your freedom so our code is open source under OSI approved license terms, which means you can customize it according to your needs.It also means that you will get this software Free of cost and we won't charge you ever for any update or support."
+    }
+  },
   "FOOTER": {
     "TITLE": "BRL-CAD © 2021",
     "DESCRIPTION": "All trademarks referenced herein are the properties of their respective owners. This site is not sponsored, endorsed, or run by the U.S. Government."
