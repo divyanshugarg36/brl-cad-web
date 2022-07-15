@@ -13,18 +13,19 @@ export const Navigation: React.FC<IProps> = () => {
   const [isOpen, setIsOpen, navContainer] = useOutside(false);
   return (
     <nav ref={navContainer}>
-      <button type="button" className="nav-icon">
-        <Image src={BrlLogo.src} alt="BRL-CAD" width={48} height={48} />
-        <h1>BRL-CAD</h1>
-      </button>
+      <Link href="/">
+        <a className="nav-icon">
+          <Image src={BrlLogo.src} alt="BRL-CAD" width={48} height={48} />
+          <h1>BRL-CAD</h1>
+        </a>
+      </Link>
       <ul className="nav-links" data-open={isOpen}>
         {NAVIGATION_DATA.map((item) => (
-          <Link
-            key={item.value}
-            href={item.value}
-          >
-            <li>{item.title}</li>
-          </Link>
+          <li key={item.value}>
+            <Link href={item.value}>
+              <a>{item.title}</a>
+            </Link>
+          </li>
         ))}
       </ul>
       <button type="button" className="nav-toggle" onClick={() => setIsOpen(!isOpen)}>
