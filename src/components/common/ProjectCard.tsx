@@ -16,6 +16,7 @@ export const ProjectCard: React.FC<IProps> = ({
   className, title, description, link, isImage,
 }) => {
   const { t } = useTranslation();
+
   return (
     <div className={classNames('project-card', className)}>
       <div className="project-card-body">

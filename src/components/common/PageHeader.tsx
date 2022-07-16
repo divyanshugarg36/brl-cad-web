@@ -15,6 +15,7 @@ export const PageHeader: React.FC<IProps> = ({
   const particlesInit = async (main: Engine) => {
     await loadFull(main);
   };
+
   return (
     <main className={classNames('page-header', className)}>
       <div />
