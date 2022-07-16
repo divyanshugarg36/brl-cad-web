@@ -71,7 +71,7 @@
     }
   }
 
-  button {
+  [type="button"] {
     margin: auto;
     width: $rhythm * 10;
   }
