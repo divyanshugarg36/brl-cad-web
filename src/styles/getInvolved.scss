@@ -1,0 +1,29 @@
+.get-involved {
+  @include flex($direction: column, $justifyContent: center, $alignItems: center);
+  background-color: var(--dark-grey);
+  padding: $rhythm * 4;
+
+  @include tablet {
+    padding: $rhythm * 3 $rhythm;
+  }
+
+  p {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: $rhythm * 2;
+    color: var(--white);
+
+    @include tablet-medium {
+      font-size: 24px;
+      margin-bottom: $rhythm * 1.5;
+    }
+
+    span {
+      color: var(--primary-color);
+    }
+  }
+
+  button {
+    margin: auto;
+  }
+}
