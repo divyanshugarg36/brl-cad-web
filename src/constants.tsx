@@ -1,6 +1,10 @@
 import React, { ReactElement } from 'react';
-import { Translation } from 'react-i18next';
+import { TFunction, Translation } from 'react-i18next';
 import { IOptions, RecursivePartial } from 'tsparticles-engine';
+
+import {
+  about1, about3, about4, since1979,
+} from './assets/images';
 
 export interface ConstantData {
   title: string | ReactElement;
@@ -24,10 +28,38 @@ export const SOCIAL_DATA: ConstantData[] = [
 ];
 
 export const LINKS = {
+  GITHUB: 'https://github.com/BRL-CAD/brlcad',
   IRC_LINK: 'https://brlcad.zulipchat.com/',
   LEARN_MORE_PDF: 'https://brlcad.org/HACKING_BRL-CAD.pdf',
   WIKIPEDIA: 'https://en.wikipedia.org/wiki/BRL-CAD',
 };
+
+export const ABOUT_US = (t: TFunction) => [
+  {
+    image: about1,
+    title: t('ABOUT.ABOUT_1.TITLE'),
+    fullTitle: t('ABOUT.ABOUT_1.FULL_TITLE'),
+    description: t('ABOUT.ABOUT_1.DESCRIPTION'),
+  },
+  {
+    image: since1979,
+    title: t('ABOUT.ABOUT_2.TITLE'),
+    fullTitle: t('ABOUT.ABOUT_2.FULL_TITLE'),
+    description: t('ABOUT.ABOUT_2.DESCRIPTION'),
+  },
+  {
+    image: about3,
+    title: t('ABOUT.ABOUT_3.TITLE'),
+    fullTitle: t('ABOUT.ABOUT_3.FULL_TITLE'),
+    description: t('ABOUT.ABOUT_3.DESCRIPTION'),
+  },
+  {
+    image: about4,
+    title: t('ABOUT.ABOUT_4.TITLE'),
+    fullTitle: t('ABOUT.ABOUT_4.FULL_TITLE'),
+    description: t('ABOUT.ABOUT_4.DESCRIPTION'),
+  },
+];
 
 export const particleOptions: RecursivePartial<IOptions> = {
   fpsLimit: 120,

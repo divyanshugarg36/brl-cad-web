@@ -2,7 +2,6 @@ nav {
   @include flex($alignItems: center, $justifyContent: space-between);
   position: relative;
   padding: 0 $rhythm;
-  font-family: $primary-font;
   height: $rhythm * 6;
   z-index: 2;
 

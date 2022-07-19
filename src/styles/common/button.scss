@@ -15,6 +15,7 @@
 
   &--small {
     font-size: 14px;
+    line-height: 2;
     height: $rhythm * 3;
     border-radius: radius(1);
   }
@@ -22,5 +23,6 @@
   &--reverse {
     background: var(--primary-color);
     color: var(--white);
+    fill: var(--white);
   }
 }

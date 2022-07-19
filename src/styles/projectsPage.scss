@@ -1,0 +1,29 @@
+.projects-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: $rhythm * 3;
+  column-gap: $rhythm * 3;
+  max-width: 1200px;
+  margin: auto;
+  padding: $rhythm * 8 $rhythm * 5;
+
+  @include tablet-large {
+    padding: $rhythm * 5 $rhythm * 3;
+  }
+
+  @include tablet {
+    padding: $rhythm * 2;
+  }
+
+  @include tablet-medium {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    @include mobile {
+      svg {
+        display: none;
+      }
+    }
+  }
+}

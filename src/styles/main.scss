@@ -9,6 +9,14 @@ main {
     aspect-ratio: 16/12;
   }
 
+  @include mobile-large {
+    aspect-ratio: 16/16;
+  }
+
+  @include mobile {
+    aspect-ratio: 16/20;
+  }
+
   #tsparticles {
     @include flex();
     position: absolute;

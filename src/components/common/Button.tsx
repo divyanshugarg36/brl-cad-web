@@ -14,9 +14,10 @@ export const Button: React.FC<IProps> = ({
 }) => {
   const Element = elementType as 'button' | 'a';
   const LinkElement = href ? Link : React.Fragment;
+  const linkElementProps: any = href ? { href } : {};
 
   return (
-    <LinkElement href={href}>
+    <LinkElement {...linkElementProps}>
       <Element type="button" className={classNames('brl-button', className)} {...props}>{children}</Element>
     </LinkElement>
   );
