@@ -16,7 +16,14 @@ export const GetInvolved: React.FC<IProps> = () => {
           BRL-CAD is <span>backed by open</span> source community
         </Trans>
       </p>
-      <Button elementType="a" className="brl-button--small" href={LINKS.IRC_LINK} target="_blank">{t('GET_INVOLVED.BUTTON')}</Button>
+      <Button
+        elementType="a"
+        className="brl-button--small"
+        href={LINKS.IRC_LINK}
+        target="_blank"
+      >
+        {t('GET_INVOLVED.BUTTON')}
+      </Button>
     </div>
   );
 };
