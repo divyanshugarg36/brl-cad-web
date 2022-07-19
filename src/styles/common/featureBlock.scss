@@ -1,0 +1,33 @@
+.feature {
+  @include flex($direction: column, $alignItems: center);
+
+  &-icon {
+    @include flex($justifyContent: center, $alignItems: center);
+    background-color: var(--primary-color);
+    height: $rhythm * 17;
+    width: $rhythm * 17;
+    border-radius: radius();
+    margin-bottom: $rhythm;
+
+    svg {
+      height: $rhythm * 12;
+      width: $rhythm * 12;
+      fill: var(--white);
+    }
+  }
+
+  h1 {
+    font-weight: normal;
+    font-size: 32px;
+    color: var(--dark-grey);
+    text-align: center;
+    margin-bottom: $rhythm / 2;
+  }
+
+  p {
+    font-size: 16px;
+    color: var(--medium-grey);
+    text-align: center;
+    margin-bottom: $rhythm;
+  }
+}
