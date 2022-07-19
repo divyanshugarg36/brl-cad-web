@@ -11,6 +11,7 @@ interface IProps {
 
 export const BrlLogo: React.FC<IProps> = ({ size }) => {
   const sizeObject = { md: 48, lg: 64 }[size];
+
   return (
     <Image
       src={brlLogo.src}
