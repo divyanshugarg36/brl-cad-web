@@ -1,0 +1,41 @@
+[{
+    "title": "arbalest",
+    "description": "The project aims to create a geometry editor for BRL-CAD. The project should ideally be an improvement over the existing editors MGED and Archer.",
+    "link": "https://github.com/BRL-CAD/arbalest"
+  },
+  {
+    "title": "brlcad",
+    "description": "BRL-CAD is a powerful cross-platform open source combinatorial solid modeling system that includes an interactive 3D solid geometry editor, a network-distributed symmetric multiprocessing (SMP) high-performance ray-tracer with support for rendering and geometric analysis, image and signal-processing tools, a system performance analysis benchmark suite, a flexible geometry scripting interface, and a high-performance geometric representation and analysis library.",
+    "link": "https://github.com/BRL-CAD/brlcad"
+  },
+  {
+    "title": "OGV-meteor",
+    "description": "Online Geometry Viewer is an online web application, where users can upload, view and share 3D CAD models. They can also host these models online, can like (love) or comment on them. In a nutshell it can be looked at as a social blogging platform for 3D models.",
+    "link": "https://github.com/BRL-CAD/OGV-meteor"
+  },
+  {
+    "title": "rt-cubed",
+    "description": "This module is a development framework for a new BRL-CAD GUI.  It's intended to be only for developers at this time.  If you're checking this out, it's expected that you are a competent developer.  Please direct all feedback to the BRL-CAD developer mailing list.  Thank you for your patience and understanding.",
+    "link": "https://github.com/BRL-CAD/rt-cubed"
+  },
+  {
+    "title": "geomcore",
+    "description": "This module holds the source code for the new geometry engine and geometry server functionality.  The code is not stable or functional and is only of interest for developers at this time.  If you're checking this out, it's expected that you are a competent developer.  Please direct all feedback to the BRL-CAD developer mailing list.  Thank you for your patience and understanding.",
+    "link": "https://github.com/BRL-CAD/geomcore"
+  },
+  {
+    "title": "benchmark",
+    "description": "An online platform for the BRL-CAD Benchmark Suite to view and share a detailed analysis of your systems's performace. Built with Django and Python, a GSoC '14 project.",
+    "link": "https://github.com/BRL-CAD/benchmark"
+  },
+  {
+    "title": "repowork",
+    "description": "This is a basic C++ program for reading Git fast-import streams and writing them back out after doing various operations on the data. It's not as generally powerful as something like https://github.com/newren/git-filter-repo",
+    "link": "https://github.com/BRL-CAD/repowork"
+  },
+  {
+    "title": "vcs-history",
+    "description": "Historical Version Control records of BRL-CAD repositories. BRL-CAD has migrated its history from one software version control system to another multiple times in its history.",
+    "link": "https://github.com/BRL-CAD/vcs-history"
+  }
+]

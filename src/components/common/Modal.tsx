@@ -17,6 +17,7 @@ export const Modal: React.FC<IProps> = ({
   className, title, children, onClose,
 }) => {
   useModalScroll(true);
+
   return (
     <ClientOnlyPortal selector="body">
       <div className={classNames('modal', className)}>

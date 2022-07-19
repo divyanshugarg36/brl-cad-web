@@ -75,6 +75,12 @@
       "DESCRIPTION": "The BRL-CAD open source project is interested in a new logo so we're holding a competition for inspiring ideas from the community! You have the chance to win cold cash, make friends, and obtain world-wide notoriety.There are cash prizes for first, second, and third place selections plus an optional bonus. Winning selections will be announced by August 15th. Pen and paper work just fine. Scan it in and e-mail it. You're welcome to use any tools or software to design the logo. That said, you can double your prize amount IF (and only if) you design a selected logo only using BRL-CAD tools. See here for an example of what I mean. If you're going for the bonus, submit a \".g\" geometry file in addition to any image file(s) you provide. In case you're wondering, shoving an image into a .g doesn't count! With our steep learning curve, though, it's definitely not for pansies nor recommended if you're a newbie. The bonus is just for the added awesome factor. The BRL-CAD \"mascot\" is a moose. Feel free to incorporate that into your design or come up with something more abstract. Other keywords relevant to our project domain are listed in this file."
     }
   },
+  "PROJECT": {
+    "TITLE": "Our Projects",
+    "DESCRIPTION": "BRL-CAD is a powerful cross-platform open source combinatorial solid modeling system that includes an interactive 3D solid geometry editor, a network-distributed symmetric multiprocessing (SMP) high-performance ray-tracer with support for rendering and geometric analysis, image and signal-processing tools, a system performance analysis benchmark suite, a flexible geometry scripting interface, and a high-performance geometric representation and analysis library.",
+    "BUTTON": "View All",
+    "VIEW_ALL": "Visit Github"
+  },
   "FOOTER": {
     "TITLE": "BRL-CAD © 2021",
     "DESCRIPTION": "All trademarks referenced herein are the properties of their respective owners. This site is not sponsored, endorsed, or run by the U.S. Government."

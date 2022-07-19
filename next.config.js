@@ -9,7 +9,7 @@ const nextConfig = {
   },
   images: {
     dangerouslyAllowSVG: true,
-    domains: ['bestpractices.coreinfrastructure.org'],
+    domains: ['bestpractices.coreinfrastructure.org', 'github.com'],
   },
 };
 

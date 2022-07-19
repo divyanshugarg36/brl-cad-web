@@ -1,0 +1,36 @@
+.project-card {
+  @include flex();
+  background: var(--white);
+  padding: $rhythm * 2;
+
+  &-body {
+    margin-right: $rhythm;
+
+    h1 {
+      font-size: 20px;
+      margin-bottom: $rhythm;
+    }
+
+    p {
+      display: -webkit-box;
+      font-size: 16px;
+      margin-bottom: $rhythm * 1.5;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+
+    a {
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+
+  svg {
+    fill: var(--black-100);
+    min-height: $rhythm * 8;
+    min-width: $rhythm * 8;
+  }
+}

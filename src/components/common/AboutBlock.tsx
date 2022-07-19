@@ -16,6 +16,7 @@ export const AboutBlock: React.FC<IProps> = ({
   className, title, fullTitle, image, description,
 }) => {
   const [isModal, setIsModal] = useState(false);
+
   return (
     <div className={classNames('about', className)}>
       <Image src={image.src} alt={fullTitle} width={200} height={200} layout="responsive" objectFit="cover" />
