@@ -1,5 +1,5 @@
 main {
-  display: flex;
+  @include flex();
   width: 100%;
   aspect-ratio: 16/9;
   background: var(--main-gradient);
@@ -9,11 +9,19 @@ main {
     aspect-ratio: 16/12;
   }
 
+  @include mobile-large {
+    aspect-ratio: 16/16;
+  }
+
+  @include mobile {
+    aspect-ratio: 16/20;
+  }
+
   #tsparticles {
+    @include flex();
     position: absolute;
     top: 0;
     left: 0;
-    display: flex;
     height: 100%;
     width: 100%;
     transform: translate(0, 0);
@@ -21,7 +29,7 @@ main {
   }
 
   .main-container {
-    @include flex-center;
+    @include flex($justifyContent: center, $alignItems: center);
     height: 100%;
     width: 100%;
     flex-direction: column;
@@ -72,6 +80,8 @@ main {
     }
 
     .main-button {
+      padding: 0 $rhythm * 4;
+
       @include tablet {
         height: $rhythm * 4;
         padding: 0 $rhythm * 2;

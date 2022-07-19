@@ -1,16 +1,12 @@
 nav {
+  @include flex($alignItems: center, $justifyContent: space-between);
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 0 $rhythm;
-  font-family: $primary-font;
   height: $rhythm * 6;
   z-index: 2;
 
   .nav-icon {
-    display: flex;
-    align-items: center;
+    @include flex($alignItems: center);
     cursor: pointer;
     background-color: transparent;
     border: none;
@@ -26,7 +22,7 @@ nav {
   }
 
   .nav-links {
-    display: flex;
+    @include flex();
     margin: 0;
     padding: 0;
 
@@ -44,7 +40,7 @@ nav {
     }
 
     &[data-open="true"] {
-      display: flex;
+      @include flex();
     }
 
     li {

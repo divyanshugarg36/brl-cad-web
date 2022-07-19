@@ -3,9 +3,7 @@ footer {
   padding: $rhythm * 5 0;
 
   .footer-link-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex($alignItems: center, $justifyContent: space-between);
     border-bottom: 1px solid var(--border-primary);
     padding: 0 $rhythm * 3;
     padding-bottom: $rhythm;
@@ -19,7 +17,7 @@ footer {
     }
 
     .footer-logo {
-      display: flex;
+      @include flex();
       margin: 0 auto;
 
       @include tablet {
@@ -30,7 +28,7 @@ footer {
     }
 
     ul {
-      display: flex;
+      @include flex();
       margin: 0;
       padding: 0;
 
@@ -57,13 +55,13 @@ footer {
   }
 
   .footer-social {
-    display: flex;
+    @include flex();
     margin: 0 auto;
     margin-bottom: $rhythm;
     width: fit-content;
 
     a {
-      @include flex-center;
+      @include flex($justifyContent: center, $alignItems: center);
       border: 1px solid var(--medium-grey);
       border-radius: radius();
       height: $rhythm * 3;
@@ -83,14 +81,13 @@ footer {
   }
 
   .footer-practices {
-    display: flex;
+    @include flex();
     margin: 0 auto;
     margin-bottom: $rhythm * 3;
     width: fit-content;
   }
 
   .footer-copyright {
-    font-family: $primary-font;
     padding: 0 $rhythm * 3;
     text-align: center;
     margin: auto;
