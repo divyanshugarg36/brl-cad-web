@@ -2,10 +2,62 @@ $primary-font:"Roboto";
 
 $rhythm: 12px;
 
-@mixin flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@mixin flex($display: flex,
+  $direction: null,
+  $placeContent: null,
+  $placeItems: null,
+  $wrap: null,
+  $shrink: null,
+  $grow: null,
+  $alignContent: null,
+  $justifyContent: null,
+  $alignItems: null,
+  $justifyItems: null) {
+  display: $display;
+
+  @if $direction {
+    flex-direction: $direction;
+  }
+
+  @if $placeContent==null {
+    @if $alignContent {
+      align-content: $alignContent;
+    }
+
+    @if $justifyContent {
+      justify-content: $justifyContent;
+    }
+  }
+
+  @else {
+    place-content: $placeContent;
+  }
+
+  @if $placeItems==null {
+    @if $alignItems {
+      align-items: $alignItems;
+    }
+
+    @if $justifyItems {
+      justify-items: $justifyItems;
+    }
+  }
+
+  @else {
+    place-items: $placeItems;
+  }
+
+  @if $wrap {
+    flex-wrap: $wrap;
+  }
+
+  @if $shrink {
+    flex-shrink: $shrink;
+  }
+
+  @if $grow {
+    flex-grow: $grow;
+  }
 }
 
 @mixin text-ellipsis {
@@ -16,4 +68,51 @@ $rhythm: 12px;
 
 @function radius($value:200) {
   @return $value * 5px;
+}
+
+@mixin scroll-bar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color) transparent;
+
+  &::-webkit-scrollbar {
+    width: $rhythm / 2;
+    height: $rhythm / 2;
+  }
+
+  &::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border: 0 none var(--primary-color);
+    border-radius: radius();
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+    border: 0 none var(--primary-color);
+    border-radius: radius(4);
+  }
+
+  &::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+  }
+
+  &::-webkit-scrollbar-thumb:active {
+    background: var(--primary-color);
+  }
+
+  &::-webkit-scrollbar-track:hover {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-track:active {
+    background: transparent;
+  }
 }

@@ -3,12 +3,22 @@
 @import "./media.scss";
 @import "./globals.scss";
 
+@import "./projectsPage.scss";
+
+@import "./common";
+@import "./aboutUs.scss";
 @import "./navigation.scss";
+@import "./main.scss";
+@import "./features.scss";
+@import "./information.scss";
+@import "./highlights.scss";
+@import "./projectSection.scss";
+@import "./footer.scss";
 
 html {
   height: 100%;
   width: 100%;
-  background: linear-gradient(180deg, var(--background-grad-1) 0%, var(--background-grad-2) 100%);
+  background: linear-gradient(180deg, var(--bg-grad-1) 0%, var(--bg-grad-2) 100%);
 
   body {
     margin: 0;

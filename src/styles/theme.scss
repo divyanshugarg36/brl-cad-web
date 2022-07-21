@@ -1,7 +1,15 @@
+$primary-color: #D0245E;
+$black: #000000;
+
 :root {
   --white: #FFFFFF;
 
-  $black: #000000;
+  --primary-color: #{$primary-color};
+  --secondary-color: #888888;
+
+  --button-gradient: linear-gradient(82.8deg, #{$primary-color} 5%, #{lighten($primary-color, 10%)} 95%);
+  --main-gradient: linear-gradient(135deg, rgba(11, 54, 91, 1) 0%, rgba(107, 16, 17, 1) 100%);
+
   --black-10: #{rgba($black, 0.1)};
   --black-20: #{rgba($black, 0.2)};
   --black-30: #{rgba($black, 0.3)};
@@ -13,12 +21,14 @@
   --black-90: #{rgba($black, 0.9)};
   --black-100: #{$black};
 
-  --background-grad-1: #F3F3F3;
-  --background-grad-2: #F8F3F3;
+  --bg-grad-1: #F3F3F3;
+  --bg-grad-2: #F8F3F3;
 
   --dialog-bg: #F6F6F6;
 
   --border-primary: #EAEAEA;
 
+  --light-grey: #999999;
   --medium-grey: #666666;
+  --dark-grey: #333333;
 }

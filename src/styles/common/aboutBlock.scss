@@ -1,0 +1,27 @@
+.about {
+  background: var(--white);
+  width: 280px;
+  box-shadow: 15px 15px 45px var(--black-20);
+  position: relative;
+  margin: 0 $rhythm * 2;
+
+  @include tablet {
+    width: 242px;
+    margin: 0 $rhythm;
+  }
+
+  @include mobile-large {
+    width: 100%;
+  }
+
+  h1 {
+    @include flex($direction: column, $justifyContent: center);
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--dark-grey);
+    text-align: center;
+    height: $rhythm * 3;
+    width: 100%;
+  }
+}

@@ -17,7 +17,10 @@
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-i18next": "^11.17.0",
-    "sass": "^1.52.2"
+    "react-tsparticles": "^2.0.6",
+    "sass": "^1.52.2",
+    "tsparticles": "^2.0.6",
+    "tsparticles-engine": "^2.0.6"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.2",
