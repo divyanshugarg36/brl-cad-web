@@ -1,6 +1,7 @@
 export { AboutUs } from './AboutUs';
 export { Features } from './Features';
 export { Footer } from './Footer';
+export { GetInvolved } from './GetInvolved';
 export { Highlights } from './Highlights';
 export { Information } from './Information';
 export { Layout } from './Layout';

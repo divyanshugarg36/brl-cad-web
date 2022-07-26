@@ -10,15 +10,13 @@ interface IProps { }
 export const Features: React.FC<IProps> = () => {
   const { t } = useTranslation();
 
-  const features = [
+  const FEATURES_LIST = [
     {
-      index: 1,
       Icon: OpenSourceIcon,
       title: t('FEATURES.FEATURE_1.TITLE'),
       description: t('FEATURES.FEATURE_1.DESCRIPTION'),
     },
     {
-      index: 2,
       Icon: HeartIcon,
       title: t('FEATURES.FEATURE_2.TITLE'),
       description: t('FEATURES.FEATURE_2.DESCRIPTION'),
@@ -26,7 +24,6 @@ export const Features: React.FC<IProps> = () => {
       link: LINKS.LEARN_MORE_PDF,
     },
     {
-      index: 3,
       Icon: SolidModelingIcon,
       title: t('FEATURES.FEATURE_3.TITLE'),
       description: t('FEATURES.FEATURE_3.DESCRIPTION'),
@@ -35,7 +32,7 @@ export const Features: React.FC<IProps> = () => {
 
   return (
     <section className="features">
-      {features.map(({
+      {FEATURES_LIST.map(({
         Icon, description, title, linkName, link,
       }) => (
         <FeatureBlock
