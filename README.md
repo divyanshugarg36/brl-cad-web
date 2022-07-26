@@ -2,6 +2,7 @@
 
 [![IRC](https://img.shields.io/badge/chat-on%20irc%20channel-green.svg)](http://webchat.freenode.net/?channels=#brlcad)
 [![IRC](https://img.shields.io/badge/join-mailing%20list-green.svg)](https://lists.sourceforge.net/lists/listinfo/brlcad-devel)
+[![IRC](https://img.shields.io/badge/chat-zulip-green.svg)](https://brlcad.zulipchat.com/)
 
 This is the official website of BRL-CAD community, where users can access some details about this community. User can view the history and details bout the BRL-CAD project and images using gallery.
 
@@ -9,12 +10,18 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Table of Contents
 
+- [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Setup and Run](#setup-and-run)
 - [Lint](#lint)
 - [Build and Deploy](#build-and-deploy)
 <!-- - [Contribution](#contribution) -->
 - [Learn More](#learn-more)
+
+## Prerequisites
+Make sure you have installed all of the following prerequisites on your development machine:
+* Git - [Download & Install Git](https://git-scm.com/downloads). OSX and Linux machines typically have this already installed.
+* Node.js - [Download & Install Node.js](https://nodejs.org/en/download/) and the npm package manager. If you encounter any problems, you can also use this [GitHub Gist](https://gist.github.com/isaacs/579814) to install Node.js.
 
 ## Installation
 
