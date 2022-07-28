@@ -1,28 +1,24 @@
 .brl-button {
   @include flex($justifyContent: center, $alignItems: center);
+  @include font($fontSize: 18px, $fontWeight: 700, $color: var(--primary-color), $textTransform: uppercase);
   cursor: pointer;
   background: var(--white);
-  color: var(--primary-color);
   width: fit-content;
   height: $rhythm * 5;
   padding: 0 $rhythm;
   border-radius: radius(2);
   box-shadow: 15px 15px 45px var(--black-20);
   border: none;
-  font-weight: 700;
-  font-size: 18px;
-  text-transform: uppercase;
 
   &--small {
-    font-size: 14px;
-    line-height: 2;
+    @include font($fontSize: 14px, $lineHeight: 2);
     height: $rhythm * 3;
     border-radius: radius(1);
   }
 
   &--reverse {
+    @include font($color: var(--white));
     background: var(--primary-color);
-    color: var(--white);
     fill: var(--white);
   }
 }

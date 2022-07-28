@@ -2,10 +2,8 @@
   padding: $rhythm * 6 0;
 
   &-heading {
-    font-size: 48px;
-    font-weight: bold;
+    @include font($fontSize: 48px, $fontWeight: bold, $color: var(--dark-grey));
     text-align: center;
-    color: var(--dark-grey);
     margin-bottom: $rhythm * 4;
   }
 }

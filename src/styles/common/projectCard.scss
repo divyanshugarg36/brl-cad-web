@@ -7,13 +7,13 @@
     margin-right: $rhythm;
 
     h1 {
-      font-size: 20px;
+      @include font($fontSize: 20px);
       margin-bottom: $rhythm;
     }
 
     p {
+      @include font($fontSize: 16px);
       display: -webkit-box;
-      font-size: 16px;
       margin-bottom: $rhythm * 1.5;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -22,9 +22,8 @@
     }
 
     a {
+      @include font($fontSize: 14px, $fontWeight: bold);
       cursor: pointer;
-      font-size: 14px;
-      font-weight: bold;
     }
   }
 

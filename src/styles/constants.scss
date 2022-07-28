@@ -60,6 +60,37 @@ $rhythm: 12px;
   }
 }
 
+@mixin font($fontSize: null,
+  $lineHeight: null,
+  $fontFamily: null,
+  $fontWeight: null,
+  $color:null,
+  $textTransform: null) {
+  @if $fontSize {
+    font-size: $fontSize;
+  }
+
+  @if $lineHeight {
+    line-height: $lineHeight;
+  }
+
+  @if $fontFamily {
+    font-family: $fontFamily;
+  }
+
+  @if $fontWeight {
+    font-weight: $fontWeight;
+  }
+
+  @if $color {
+    color: $color;
+  }
+
+  @if $textTransform {
+    text-transform: $textTransform;
+  }
+}
+
 @mixin text-ellipsis {
   text-overflow: ellipsis;
   white-space: nowrap;

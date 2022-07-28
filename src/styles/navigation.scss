@@ -14,10 +14,8 @@ nav {
     padding: 0;
 
     h1 {
+      @include font($fontSize: 24px, $fontWeight: bold, $color: var(--medium-grey));
       margin-left: $rhythm !important;
-      font-size: 24px;
-      font-weight: bold;
-      color: var(--medium-grey);
     }
   }
 
@@ -44,11 +42,10 @@ nav {
     }
 
     li {
+      @include font($fontSize: 16px, $color: var(--medium-grey));
       cursor: pointer;
       list-style: none;
       margin-right: $rhythm * 2.5;
-      font-size: 16px;
-      color: var(--medium-grey);
 
       @include tablet {
         margin: 0;

@@ -17,16 +17,13 @@
   }
 
   h1 {
-    font-weight: normal;
-    font-size: 32px;
-    color: var(--dark-grey);
+    @include font($fontSize: 32px, $fontWeight: normal, $color: var(--dark-grey));
     text-align: center;
     margin-bottom: $rhythm / 2;
   }
 
   p {
-    font-size: 16px;
-    color: var(--medium-grey);
+    @include font($fontSize: 16px, $color: var(--medium-grey));
     text-align: center;
     margin-bottom: $rhythm;
   }

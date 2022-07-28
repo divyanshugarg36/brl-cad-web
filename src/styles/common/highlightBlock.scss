@@ -38,14 +38,12 @@
     }
 
     h1 {
-      font-size: 36px;
-      color: var(--dark-grey);
+      @include font($fontSize: 36px, $color: var(--dark-grey));
       margin-bottom: $rhythm * 1.5;
     }
 
     p {
-      font-size: 18px;
-      color: var(--medium-grey);
+      @include font($fontSize: 18px, $color: var(--medium-grey));
       margin-bottom: $rhythm;
     }
   }

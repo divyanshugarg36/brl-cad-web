@@ -8,21 +8,21 @@
   }
 
   h1 {
-    font-size: 48px;
+    @include font($fontSize: 48px);
     text-align: center;
     margin-bottom: $rhythm;
 
     @include tablet {
-      font-size: 36px;
+      @include font($fontSize: 36px);
     }
   }
 
   p {
     text-align: center;
-    font-size: 18px;
+    @include font($fontSize: 18px);
 
     @include tablet {
-      font-size: 16px;
+      @include font($fontSize: 16px);
     }
   }
 }

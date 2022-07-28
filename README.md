@@ -1,34 +1,79 @@
+# BRL-CAD Web 2022
+
+[![IRC](https://img.shields.io/badge/chat-on%20irc%20channel-green.svg)](http://webchat.freenode.net/?channels=#brlcad)
+[![IRC](https://img.shields.io/badge/join-mailing%20list-green.svg)](https://lists.sourceforge.net/lists/listinfo/brlcad-devel)
+[![IRC](https://img.shields.io/badge/chat-zulip-green.svg)](https://brlcad.zulipchat.com/)
+
+This is the official website of BRL-CAD community, where users can access some details about this community. User can view the history and details bout the BRL-CAD project and images using gallery.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Table of Contents
 
-First, run the development server:
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Setup and Run](#setup-and-run)
+- [Lint](#lint)
+- [Build and Deploy](#build-and-deploy)
+<!-- - [Contribution](#contribution) -->
+- [Learn More](#learn-more)
 
-```bash
-npm run dev
-# or
-yarn dev
+## Prerequisites
+Make sure you have installed all of the following prerequisites on your development machine:
+* Git - [Download & Install Git](https://git-scm.com/downloads). OSX and Linux machines typically have this already installed.
+* Node.js - [Download & Install Node.js](https://nodejs.org/en/download/) and the npm package manager. If you encounter any problems, you can also use this [GitHub Gist](https://gist.github.com/isaacs/579814) to install Node.js.
+
+## Installation
+
+Clone this repo
+
+```sh
+git clone https://github.com/divyanshugarg36/brl-cad-web.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+###### Install Nodejs :
+```
+sudo apt-get install nodejs
+```
+###### Clone the BRL-CAD Web Repository
+```
+sudo apt-get install git
+git clone https://github.com/divyanshugarg36/brl-cad-web
+```
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Setup and Run
+Run this command
+```
+npm run dev
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Then open Browser and type in URL
+```
+http://localhost:5000
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Lint
+To run ESlint check run 
+```
+npm run lint 
+```
+
+## Build and deploy
+To build BRL-CAD Web run build script 
+```
+npm run build
+```
+This will generate the build files then run
+```
+npm start
+```
+This will run the production server
+
+<!-- ## Contribution
+Please see [CONTRIBUTION.md](CONTRIBUTING.md) -->
 
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
-
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
