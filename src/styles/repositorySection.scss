@@ -1,4 +1,4 @@
-.project-section {
+.repository-section {
   margin: auto;
   padding: $rhythm * 10;
 
@@ -10,7 +10,7 @@
     padding: $rhythm;
   }
 
-  .project-main {
+  .repository-main {
     @include flex();
     background-color: var(--black-100);
     color: var(--white);

@@ -6,4 +6,4 @@ export { Information } from './Information';
 export { Layout } from './Layout';
 export { Main } from './Main';
 export { Navigation } from './Navigation';
-export { ProjectSection } from './ProjectSection';
+export { RepositorySection } from './RepositorySection';
