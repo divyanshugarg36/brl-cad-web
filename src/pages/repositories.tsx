@@ -2,8 +2,8 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import { useTranslation } from 'react-i18next';
 
-import { PageHeader, ProjectCard } from '../components/common';
-import projects from '../projects.json';
+import { PageHeader, RepositoryCard } from '../components/common';
+import projects from '../repositories.json';
 
 const Home: NextPage = () => {
   const { t } = useTranslation();
@@ -14,9 +14,9 @@ const Home: NextPage = () => {
         <title>{t('TITLE')}</title>
       </Head>
       <PageHeader title={t('PROJECT.TITLE')} />
-      <div className="projects-body">
+      <div className="repository-body">
         {projects.map(({ title, description, link }) => (
-          <ProjectCard
+          <RepositoryCard
             key={title}
             title={title}
             description={description}
