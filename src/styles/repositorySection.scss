@@ -3,6 +3,7 @@
   padding: $rhythm * 10;
 
   @include tablet-large {
+    margin-bottom: $rhythm * 4;
     padding: $rhythm *5;
   }
 

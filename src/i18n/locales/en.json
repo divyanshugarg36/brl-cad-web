@@ -81,6 +81,10 @@
     "BUTTON": "View All",
     "VIEW_ALL": "Visit Github"
   },
+  "GET_INVOLVED": {
+    "TITLE": "BRL-CAD is <1>backed by open</1> source community",
+    "BUTTON": "Get Involved"
+  },
   "FOOTER": {
     "TITLE": "BRL-CAD © 2021",
     "DESCRIPTION": "All trademarks referenced herein are the properties of their respective owners. This site is not sponsored, endorsed, or run by the U.S. Government."
