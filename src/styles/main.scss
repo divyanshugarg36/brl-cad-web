@@ -4,6 +4,7 @@ main {
   aspect-ratio: 16/9;
   background: var(--main-gradient);
   position: relative;
+  overflow: hidden;
 
   @include tablet {
     aspect-ratio: 16/12;
