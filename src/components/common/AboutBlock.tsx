@@ -1,6 +1,7 @@
 import { classNames } from '@constants';
 import Image, { StaticImageData } from 'next/image';
 import React, { useState } from 'react';
+import { Trans } from 'react-i18next';
 
 import { Modal } from './Modal';
 
@@ -23,7 +24,20 @@ export const AboutBlock: React.FC<IProps> = ({
       <h1 role="presentation" onClick={() => setIsModal((isModal) => !isModal)}>{title}</h1>
       {isModal && (
         <Modal title={fullTitle} onClose={() => setIsModal((isModal) => !isModal)}>
-          {description}
+          {/*
+            The elements are supposed to be in this way because
+            this is the most redundant way of mapping i18n text with actual JSX elements.
+          */}
+          <Trans i18nKey={description}>
+            -
+            <p>
+              <b />
+            </p>
+            <ul>
+              <li />
+            </ul>
+            -
+          </Trans>
         </Modal>
       )}
     </div>
