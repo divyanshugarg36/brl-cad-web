@@ -16,7 +16,7 @@
 
   h1 {
     @include flex($direction: column, $justifyContent: center);
-    @include font($fontSize: 16px, $fontWeight: normal, $color: var(--dark-grey));
+    @include font($fontSize: 16px, $fontWeight: 500, $color: var(--dark-grey));
     cursor: pointer;
     text-align: center;
     height: $rhythm * 3;

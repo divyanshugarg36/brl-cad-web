@@ -51,5 +51,9 @@
     @include tablet-medium {
       @include font($fontSize: 16px);
     }
+
+    p {
+      margin-bottom: $rhythm * 2;
+    }
   }
 }
