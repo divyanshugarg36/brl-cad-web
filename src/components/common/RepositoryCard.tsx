@@ -12,14 +12,14 @@ interface IProps {
   isImage?: boolean;
 }
 
-export const ProjectCard: React.FC<IProps> = ({
+export const RepositoryCard: React.FC<IProps> = ({
   className, title, description, link, isImage,
 }) => {
   const { t } = useTranslation();
 
   return (
-    <div className={classNames('project-card', className)}>
-      <div className="project-card-body">
+    <div className={classNames('repository-card', className)}>
+      <div className="repository-card-body">
         <h1>{title}</h1>
         <p>{description}</p>
         <Link href={link}>
@@ -31,7 +31,7 @@ export const ProjectCard: React.FC<IProps> = ({
   );
 };
 
-ProjectCard.defaultProps = {
+RepositoryCard.defaultProps = {
   className: '',
   isImage: false,
 };

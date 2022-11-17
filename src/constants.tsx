@@ -39,25 +39,25 @@ export const ABOUT_US = (t: TFunction) => [
     image: about1,
     title: t('ABOUT.ABOUT_1.TITLE'),
     fullTitle: t('ABOUT.ABOUT_1.FULL_TITLE'),
-    description: t('ABOUT.ABOUT_1.DESCRIPTION'),
+    description: 'ABOUT.ABOUT_1.DESCRIPTION',
   },
   {
     image: since1979,
     title: t('ABOUT.ABOUT_2.TITLE'),
     fullTitle: t('ABOUT.ABOUT_2.FULL_TITLE'),
-    description: t('ABOUT.ABOUT_2.DESCRIPTION'),
+    description: 'ABOUT.ABOUT_2.DESCRIPTION',
   },
   {
     image: about3,
     title: t('ABOUT.ABOUT_3.TITLE'),
     fullTitle: t('ABOUT.ABOUT_3.FULL_TITLE'),
-    description: t('ABOUT.ABOUT_3.DESCRIPTION'),
+    description: 'ABOUT.ABOUT_3.DESCRIPTION',
   },
   {
     image: about4,
     title: t('ABOUT.ABOUT_4.TITLE'),
     fullTitle: t('ABOUT.ABOUT_4.FULL_TITLE'),
-    description: t('ABOUT.ABOUT_4.DESCRIPTION'),
+    description: 'ABOUT.ABOUT_4.DESCRIPTION',
   },
 ];
 

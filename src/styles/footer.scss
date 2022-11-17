@@ -93,13 +93,11 @@ footer {
     margin: auto;
 
     h2 {
-      font-size: 16px;
-      color: var(--dark-grey);
+      @include font($fontSize: 16px, $color: var(--dark-grey));
     }
 
     p {
-      font-size: 14px;
-      color: var(--light-grey);
+      @include font($fontSize: 14px, $color: var(--light-grey));
     }
   }
 }

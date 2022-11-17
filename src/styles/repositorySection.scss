@@ -1,4 +1,4 @@
-.project-section {
+.repository-section {
   margin: auto;
   padding: $rhythm * 10;
 
@@ -11,7 +11,7 @@
     padding: $rhythm;
   }
 
-  .project-main {
+  .repository-main {
     @include flex();
     background-color: var(--black-100);
     color: var(--white);
@@ -33,12 +33,12 @@
       padding: $rhythm * 2 $rhythm * 4;
 
       h1 {
-        font-size: 36px;
+        @include font($fontSize: 36px);
         margin-bottom: $rhythm;
       }
 
       p {
-        font-size: 16px;
+        @include font($fontSize: 16px);
         margin-bottom: $rhythm;
       }
 

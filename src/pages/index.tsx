@@ -3,7 +3,8 @@ import Head from 'next/head';
 import { useTranslation } from 'react-i18next';
 
 import {
-  AboutUs, Features, GetInvolved, Highlights, Information, Main, ProjectSection,
+  AboutUs, Features, GetInvolved, Highlights, Information,
+  Main, RepositorySection,
 } from '../components';
 
 const Home: NextPage = () => {
@@ -19,7 +20,7 @@ const Home: NextPage = () => {
       <Information />
       <Highlights />
       <AboutUs />
-      <ProjectSection />
+      <RepositorySection />
       <GetInvolved />
     </>
   );
