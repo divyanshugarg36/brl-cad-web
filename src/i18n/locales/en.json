@@ -93,7 +93,7 @@
     "BUTTON": "Get Involved"
   },
   "FOOTER": {
-    "TITLE": "BRL-CAD © 2021",
+    "TITLE": "BRL-CAD © {{year}}",
     "DESCRIPTION": "All trademarks referenced herein are the properties of their respective owners. This site is not sponsored, endorsed, or run by the U.S. Government."
   }
 }
