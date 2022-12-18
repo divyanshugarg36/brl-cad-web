@@ -17,6 +17,7 @@ export const Footer: React.FC<IProps> = () => {
   const { t } = useTranslation();
   const FIRST_THREE = NAVIGATION_DATA.slice(0, 3);
   const LAST_THREE = NAVIGATION_DATA.slice(3);
+  const year = (new Date()).getFullYear();
 
   const footerLinks = (links: ConstantData[]) => (
     <ul>
@@ -60,7 +61,7 @@ export const Footer: React.FC<IProps> = () => {
         </a>
       </Link>
       <div className="footer-copyright">
-        <h2>{t('FOOTER.TITLE')}</h2>
+        <h2>{t('FOOTER.TITLE', { year })}</h2>
         <p>{t('FOOTER.DESCRIPTION')}</p>
       </div>
     </footer>
