@@ -1,12 +1,14 @@
 import {
   Head, Html, Main, NextScript,
 } from 'next/document';
+import { useTranslation } from 'react-i18next';
 
 export default function Document() {
+  const { t } = useTranslation();
   return (
-    <Html>
+    <Html lang="en">
       <Head>
-        <meta name="description" content="" />
+        <meta name="description" content={t('INFORMATION.DESCRIPTION')} />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link

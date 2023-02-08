@@ -19,7 +19,7 @@ export const HighlightBlock: React.FC<IProps> = ({
 }) => (
   <div className={classNames('highlight', isReverse && 'highlight--reverse', className)}>
     <div className="highlight-image">
-      <Image src={image.src} layout="responsive" width={16} height={9} />
+      <Image src={image.src} layout="responsive" width={16} height={9} alt={title} />
     </div>
     <div className="highlight-content">
       <h1>{title}</h1>
@@ -30,6 +30,7 @@ export const HighlightBlock: React.FC<IProps> = ({
           href={`${link}`}
           className="main-button brl-button--small brl-button--reverse"
           target="_blank"
+          aria-label="some more descriptive text that explains the link"
         >
           {linkName}
         </Button>

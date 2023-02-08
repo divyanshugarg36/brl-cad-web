@@ -20,7 +20,14 @@ export const AboutBlock: React.FC<IProps> = ({
 
   return (
     <div className={classNames('about', className)}>
-      <Image src={image.src} alt={fullTitle} width={200} height={200} layout="responsive" objectFit="cover" />
+      <Image
+        src={image.src}
+        alt={fullTitle}
+        width={200}
+        height={200}
+        layout="responsive"
+        objectFit="cover"
+      />
       <h1 role="presentation" onClick={() => setIsModal((isModal) => !isModal)}>{title}</h1>
       {isModal && (
         <Modal title={fullTitle} onClose={() => setIsModal((isModal) => !isModal)}>

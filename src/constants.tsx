@@ -20,11 +20,27 @@ export const NAVIGATION_DATA: ConstantData[] = [
   { title: <Translation>{(t) => t('NAVIGATION.GALLERY')}</Translation>, value: 'https://brlcad.org/gallery/' },
 ];
 
-export const SOCIAL_DATA: ConstantData[] = [
-  { title: 'facebook', value: 'https://www.facebook.com/pages/BRL-CAD/387112738872' },
-  { title: 'twitter', value: 'https://twitter.com/brl_cad' },
-  { title: 'linkedin', value: 'https://www.linkedin.com/in/brlcad' },
-  { title: 'youtube', value: 'https://www.youtube.com/results?search_query=brl+-+cad' },
+export const SOCIAL_DATA: (ConstantData & { label: ReactElement })[] = [
+  {
+    title: 'facebook',
+    value: 'https://www.facebook.com/pages/BRL-CAD/387112738872',
+    label: <Translation>{(t) => t('FOOTER.SOCIAL.FACEBOOK')}</Translation>,
+  },
+  {
+    title: 'twitter',
+    value: 'https://twitter.com/brl_cad',
+    label: <Translation>{(t) => t('FOOTER.SOCIAL.TWITTER')}</Translation>,
+  },
+  {
+    title: 'linkedin',
+    value: 'https://www.linkedin.com/in/brlcad',
+    label: <Translation>{(t) => t('FOOTER.SOCIAL.LINKEDIN')}</Translation>,
+  },
+  {
+    title: 'youtube',
+    value: 'https://www.youtube.com/results?search_query=brl+-+cad',
+    label: <Translation>{(t) => t('FOOTER.SOCIAL.YOUTUBE')}</Translation>,
+  },
 ];
 
 export const LINKS = {

@@ -51,7 +51,9 @@ export const Footer: React.FC<IProps> = () => {
             youtube: YoutubeIcon,
           }[item.title as 'facebook' | 'linkedin' | 'twitter' | 'youtube'];
           return (
-            <Link key={item.value} href={item.value}><a><Icon /></a></Link>
+            <Link key={item.value} href={item.value}>
+              <a aria-label={item.label as unknown as string}><Icon /></a>
+            </Link>
           );
         })}
       </div>
