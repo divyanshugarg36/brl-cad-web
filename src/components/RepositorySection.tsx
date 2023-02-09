@@ -15,14 +15,21 @@ export const RepositorySection: React.FC<IProps> = () => {
   return (
     <section className="repository-section">
       <div className="repository-main">
-        <Image className="repository-main-image" src="https://github.com/BRL-CAD.png" height={500} width={500} layout="fixed" />
+        <Image
+          className="repository-main-image"
+          alt="brl-cad"
+          src="https://github.com/BRL-CAD.png"
+          height={500}
+          width={500}
+          layout="fixed"
+        />
         <div className="repository-main-body">
           <h1>{t('PROJECT.TITLE')}</h1>
           <p>
             {t('PROJECT.DESCRIPTION')}
           </p>
           <Link href={LINKS.GITHUB}>
-            <a>
+            <a aria-label={t('PROJECT.LABEL')}>
               <GithubIcon />
             </a>
           </Link>

@@ -45,7 +45,7 @@
     "HIGHLIGHT_3": {
       "TITLE": "Since 1979",
       "DESCRIPTION": "Mike Muuss began the initial architecture and design of BRL-CAD back in 1979. Development as a unified package began in 1983. The first public release was made in 1984. BRL-CAD became an open source project on 21 December 2004.",
-      "BUTTON": "Learn More"
+      "BUTTON": "Learn More..."
     },
     "HIGHLIGHT_4": {
       "TITLE": "Free & Open",
@@ -54,13 +54,6 @@
   },
   "ABOUT": {
     "TITLE": "About Us",
-
-
-
-
-
-
-
     "ABOUT_1": {
       "TITLE": "WHY DEVELOP BRL-CAD?",
       "FULL_TITLE": "WHY DEVELOP BRL-CAD?",
@@ -85,6 +78,7 @@
   "PROJECT": {
     "TITLE": "Our Repositories",
     "DESCRIPTION": "Mike Muuss began the initial architecture and design of BRL-CAD back in 1979. Development as a unified package began in 1983. The first public release was made in 1984. BRL-CAD became an open source project on 21 December 2004.",
+    "LABEL": "Link to all BRL-CAD projects",
     "BUTTON": "View All",
     "VIEW_ALL": "Visit Github"
   },
@@ -94,6 +88,12 @@
   },
   "FOOTER": {
     "TITLE": "BRL-CAD © {{year}}",
-    "DESCRIPTION": "All trademarks referenced herein are the properties of their respective owners. This site is not sponsored, endorsed, or run by the U.S. Government."
+    "DESCRIPTION": "All trademarks referenced herein are the properties of their respective owners. This site is not sponsored, endorsed, or run by the U.S. Government.",
+    "SOCIAL": {
+      "FACEBOOK": "Follow us on Facebook",
+      "LINKEDIN": "Follow us on LinkedIn",
+      "TWITTER": "Follow us on Twitter",
+      "YOUTUBE": "Subscribe BRL-CAD on Youtube"
+    }
   }
 }
