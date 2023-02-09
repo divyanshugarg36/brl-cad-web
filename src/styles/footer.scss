@@ -97,7 +97,7 @@ footer {
     }
 
     p {
-      @include font($fontSize: 14px, $color: var(--light-grey));
+      @include font($fontSize: 14px, $color: var(--medium-grey));
     }
   }
 }
