@@ -1,6 +1,6 @@
 import { LINKS } from '@constants';
 import { GithubIcon } from '@icons';
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import Link from 'next/link';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
@@ -28,10 +28,8 @@ export const RepositorySection: React.FC<IProps> = () => {
           <p>
             {t('PROJECT.DESCRIPTION')}
           </p>
-          <Link href={LINKS.GITHUB}>
-            <a aria-label={t('PROJECT.LABEL')}>
-              <GithubIcon />
-            </a>
+          <Link aria-label={t('PROJECT.LABEL')} href={LINKS.GITHUB}>
+            <GithubIcon />
           </Link>
         </div>
       </div>

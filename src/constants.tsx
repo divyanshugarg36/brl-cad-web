@@ -20,26 +20,26 @@ export const NAVIGATION_DATA: ConstantData[] = [
   { title: <Translation>{(t) => t('NAVIGATION.GALLERY')}</Translation>, value: 'https://brlcad.org/gallery/' },
 ];
 
-export const SOCIAL_DATA: (ConstantData & { label: ReactElement })[] = [
+export const SOCIAL_DATA = (t: TFunction): (ConstantData & { label: string })[] => [
   {
     title: 'facebook',
     value: 'https://www.facebook.com/pages/BRL-CAD/387112738872',
-    label: <Translation>{(t) => t('FOOTER.SOCIAL.FACEBOOK')}</Translation>,
+    label: t('FOOTER.SOCIAL.FACEBOOK'),
   },
   {
     title: 'twitter',
     value: 'https://twitter.com/brl_cad',
-    label: <Translation>{(t) => t('FOOTER.SOCIAL.TWITTER')}</Translation>,
+    label: t('FOOTER.SOCIAL.TWITTER'),
   },
   {
     title: 'linkedin',
     value: 'https://www.linkedin.com/in/brlcad',
-    label: <Translation>{(t) => t('FOOTER.SOCIAL.LINKEDIN')}</Translation>,
+    label: t('FOOTER.SOCIAL.LINKEDIN'),
   },
   {
     title: 'youtube',
     value: 'https://www.youtube.com/results?search_query=brl+-+cad',
-    label: <Translation>{(t) => t('FOOTER.SOCIAL.YOUTUBE')}</Translation>,
+    label: t('FOOTER.SOCIAL.YOUTUBE'),
   },
 ];
 

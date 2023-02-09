@@ -4,7 +4,7 @@ import React from 'react';
 
 interface IProps extends React.HTMLAttributes<HTMLButtonElement & HTMLAnchorElement> {
   className?: string
-  elementType?: string
+  elementType?: 'button' | 'a'
   href?: LinkProps['href'];
   target?: string
 }
@@ -12,14 +12,25 @@ interface IProps extends React.HTMLAttributes<HTMLButtonElement & HTMLAnchorElem
 export const Button: React.FC<IProps> = ({
   children, className, elementType, href = '', ...props
 }) => {
-  const Element = elementType as 'button' | 'a';
-  const LinkElement = href ? Link : React.Fragment;
-  const linkElementProps: any = href ? { href } : {};
-
+  if (elementType === 'button') {
+    return (
+      <button
+        type="button"
+        className={classNames('brl-button', className)}
+        {...props}
+      >
+        {children}
+      </button>
+    );
+  }
   return (
-    <LinkElement {...linkElementProps}>
-      <Element type="button" className={classNames('brl-button', className)} {...props}>{children}</Element>
-    </LinkElement>
+    <Link
+      className={classNames('brl-button', className)}
+      href={href}
+      {...props}
+    >
+      {children}
+    </Link>
   );
 };
 
