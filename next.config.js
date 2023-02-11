@@ -12,6 +12,7 @@ const nextConfig = {
     unoptimized: true,
     domains: ['bestpractices.coreinfrastructure.org', 'github.com'],
   },
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;
