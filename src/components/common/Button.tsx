@@ -25,6 +25,7 @@ export const Button: React.FC<IProps> = ({
   }
   return (
     <Link
+      type="button"
       className={classNames('brl-button', className)}
       href={href}
       {...props}
