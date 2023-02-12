@@ -1,5 +1,5 @@
 import { classNames } from '@constants';
-import Image, { StaticImageData } from 'next/image';
+import Image, { StaticImageData } from 'next/legacy/image';
 import React, { useState } from 'react';
 import { Trans } from 'react-i18next';
 

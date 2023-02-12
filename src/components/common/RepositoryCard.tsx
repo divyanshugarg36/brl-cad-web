@@ -22,9 +22,7 @@ export const RepositoryCard: React.FC<IProps> = ({
       <div className="repository-card-body">
         <h1>{title}</h1>
         <p>{description}</p>
-        <Link href={link}>
-          <a target="_blank">{t('PROJECT.VIEW_ALL')}</a>
-        </Link>
+        <Link target="_blank" href={link}>{t('PROJECT.VIEW_ALL')}</Link>
       </div>
       {isImage && <GithubIcon />}
     </div>

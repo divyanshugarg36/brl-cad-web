@@ -4,7 +4,7 @@ import {
 import {
   FacebookIcon, LinkedInIcon, TwitterIcon, YoutubeIcon,
 } from '@icons';
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import Link from 'next/link';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
@@ -23,9 +23,7 @@ export const Footer: React.FC<IProps> = () => {
     <ul>
       {links.map((item) => (
         <li key={item.value}>
-          <Link href={item.value}>
-            <a>{item.title}</a>
-          </Link>
+          <Link href={item.value}>{item.title}</Link>
         </li>
       ))}
     </ul>
@@ -35,15 +33,13 @@ export const Footer: React.FC<IProps> = () => {
     <footer>
       <div className="footer-link-section">
         {footerLinks(FIRST_THREE)}
-        <Link href="/">
-          <a className="footer-logo">
-            <BrlLogo size="lg" />
-          </a>
+        <Link className="footer-logo" href="/">
+          <BrlLogo size="lg" />
         </Link>
         {footerLinks(LAST_THREE)}
       </div>
       <div className="footer-social">
-        {SOCIAL_DATA.map((item) => {
+        {SOCIAL_DATA(t).map((item) => {
           const Icon = {
             facebook: FacebookIcon,
             linkedin: LinkedInIcon,
@@ -51,16 +47,19 @@ export const Footer: React.FC<IProps> = () => {
             youtube: YoutubeIcon,
           }[item.title as 'facebook' | 'linkedin' | 'twitter' | 'youtube'];
           return (
-            <Link key={item.value} href={item.value}>
-              <a aria-label={item.label as unknown as string}><Icon /></a>
+            <Link
+              key={item.value}
+              href={item.value}
+              target="_blank"
+              aria-label={item.label as unknown as string}
+            >
+              <Icon />
             </Link>
           );
         })}
       </div>
-      <Link href={BEST_PRACTICES.HREF}>
-        <a className="footer-practices">
-          <Image alt="best practices" src={BEST_PRACTICES.IMAGE} height={20} width={184} />
-        </a>
+      <Link className="footer-practices" href={BEST_PRACTICES.HREF}>
+        <Image alt="best practices" src={BEST_PRACTICES.IMAGE} height={20} width={184} />
       </Link>
       <div className="footer-copyright">
         <h2>{t('FOOTER.TITLE', { year })}</h2>

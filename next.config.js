@@ -9,8 +9,10 @@ const nextConfig = {
   },
   images: {
     dangerouslyAllowSVG: true,
+    unoptimized: true,
     domains: ['bestpractices.coreinfrastructure.org', 'github.com'],
   },
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;

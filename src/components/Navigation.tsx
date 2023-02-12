@@ -13,18 +13,14 @@ export const Navigation: React.FC<IProps> = () => {
 
   return (
     <nav ref={navContainer}>
-      <Link href="/">
-        <a className="nav-icon">
-          <BrlLogo size="md" />
-          <h1>BRL-CAD</h1>
-        </a>
+      <Link className="nav-icon" href="/">
+        <BrlLogo size="md" />
+        <h1>BRL-CAD</h1>
       </Link>
       <ul className="nav-links" data-open={isOpen}>
         {NAVIGATION_DATA.map((item) => (
           <li key={item.value}>
-            <Link href={item.value}>
-              <a>{item.title}</a>
-            </Link>
+            <Link href={item.value}>{item.title}</Link>
           </li>
         ))}
       </ul>
