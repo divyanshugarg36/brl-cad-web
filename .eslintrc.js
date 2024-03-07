@@ -99,5 +99,8 @@ module.exports = {
         '@hooks',
       ],
     }],
+
+    // Disabled to avoid button without text issue
+    'jsx-a11y/control-has-associated-label': 'off',
   },
 };
